@@ -1,0 +1,1664 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>安卓软件,安卓软件下载,安卓应用,手机安卓软件下载 - 豌豆荚</title>
+    <meta name="keywords" content="安卓软件,安卓软件下载,安卓应用,手机安卓软件下载" />
+    <meta name="description" content="豌豆荚提供最新「安卓软件」和「安卓应用」下载，200 万优质、免费且无毒的安卓软件和安卓应用免费提供下载，无需注册和登录。" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="applicable-device" content="pc,mobile">
+    <link rel="shortcut icon" href="//st.wdjcdn.com/appshttp://www.wandoujia.com/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+
+    <link rel="stylesheet" href="//st.wdjcdn.com/apps/stylesheets/b344e7e2.pc-category.css"/>
+
+
+    <!--[if lte IE 8]>
+    <script src="//st.wdjcdn.com/apps/javascripts/29c0e2de.html5shiv.js"></script>
+    <![endif]-->
+
+
+    <!--[if IE 6]>
+    <script src="//st.wdjcdn.com/apps/javascripts/80df2ee4.mini-png-hack.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-page="appcategory" class="appcategory PC" >
+
+<header>
+    <div class="inner">
+        <div class="drawer" id="j-nav-btn"></div>
+        <div class="logo-wp">
+            <a class="pngFix logo" href="http://www.wandoujia.com">豌豆荚</a>
+        </div>
+        <ul class="header-nav">
+            <li>
+                <a target="_blank" href="http://www.wandoujia.com/" class="green">豌豆荚</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.wandoujia.com/yilan?utm_source=homepage&amp;utm_campaign=routine&amp;utm_medium=internal&amp;utm_content=header">一览</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.wandoujia.com/screen">豌豆荚 Smart 锁屏</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.wandoujia.com/eyepetizer">开眼</a>
+            </li>
+        </ul>
+<form class="search-form clearfix" action="/search">
+    <input class="key-ipt" name="key" value="" autocomplete="off" placeholder="搜索安卓应用和游戏" id="j-search-input">
+
+    <input type="submit" value="搜索" class="submit" id="j-search-btn"/>
+    <input type="hidden" name="source" value="appcategory" />
+</form>
+    </div>
+</header>
+
+<div class="mask" id="j-mask"></div>
+<nav id="j-head-menu" class="menu-list pc-main-menu">
+    <ul class="parent-menu">
+        <li class=" nav-item">
+            <a class="first-link" href="http://www.wandoujia.com/apps"><span>应用首页</span></a>
+        </li>
+        <li class="current has-subs nav-item app-tag-wrap">
+            <a class="app-tag first-link" href="http://www.wandoujia.com/category/app"><span>安卓软件<i class="arrow-down"></i></span></a>
+
+            <ul class="app-popup tag-popup clearfix">
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/408" title="旅游出行">旅游出行</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/596" title="综合旅游服务">综合旅游服务</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/598" title="攻略">攻略</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/600" title="酒店·住宿">酒店·住宿</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/602" title="周边游">周边游</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/604" title="旅行工具·户外">旅行工具·户外</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/398" title="金融理财">金融理财</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/544" title="投资">投资</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/546" title="银行">银行</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/548" title="记账">记账</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/550" title="支付">支付</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/552" title="彩票">彩票</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/554" title="理财工具">理财工具</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/382" title="视频">视频</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/418" title="在线视频">在线视频</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/420" title="电视·直播">电视·直播</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/422" title="真人视频">真人视频</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/424" title="短视频">短视频</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/426" title="视频播放器">视频播放器</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/390" title="购物">购物</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/466" title="商城">商城</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/470" title="导购">导购</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/472" title="海淘">海淘</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/468" title="团购·优惠券">团购·优惠券</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/474" title="快递">快递</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/384" title="音乐">音乐</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/428" title="在线音乐">在线音乐</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/430" title="电台">电台</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/432" title="K歌">K歌</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/434" title="铃声">铃声</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/436" title="乐器">乐器</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/438" title="音乐播放器">音乐播放器</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/386" title="图像">图像</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/440" title="相机">相机</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/442" title="拍视频">拍视频</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/444" title="图片美化·滤镜">图片美化·滤镜</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/446" title="图片分享">图片分享</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/448" title="相册·图库">相册·图库</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/388" title="新闻阅读">新闻阅读</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/450" title="新闻·资讯">新闻·资讯</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/452" title="日报·杂志">日报·杂志</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/454" title="电子书">电子书</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/456" title="听书">听书</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/458" title="漫画">漫画</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/460" title="搞笑">搞笑</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/462" title="百科·问答">百科·问答</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/464" title="画报">画报</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/410" title="生活实用工具">生活实用工具</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/606" title="天气">天气</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/608" title="美食·菜谱">美食·菜谱</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/610" title="日历">日历</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/612" title="时钟">时钟</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/614" title="扫码">扫码</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/616" title="手工">手工</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/618" title="手电筒">手电筒</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/620" title="计算器">计算器</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/412" title="系统工具">系统工具</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/622" title="Wi-Fi">Wi-Fi</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/624" title="输入法">输入法</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/626" title="浏览器">浏览器</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/628" title="搜索·下载">搜索·下载</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/630" title="安全">安全</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/632" title="优化">优化</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/636" title="传输">传输</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/638" title="root">root</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/640" title="文件管理">文件管理</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/634" title="存储·云盘">存储·云盘</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/414" title="美化手机">美化手机</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/642" title="桌面·主题">桌面·主题</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/644" title="壁纸">壁纸</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/646" title="锁屏">锁屏</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/648" title="字体">字体</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/416" title="效率办公">效率办公</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/650" title="办公软件">办公软件</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/652" title="笔记">笔记</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/654" title="效率">效率</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/656" title="文件管理">文件管理</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/658" title="存储·云盘">存储·云盘</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/660" title="邮箱">邮箱</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/402" title="聊天社交">聊天社交</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/564" title="聊天">聊天</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/566" title="交友">交友</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/568" title="婚恋">婚恋</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/570" title="社区">社区</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/572" title="微博">微博</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/574" title="匿名">匿名</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/576" title="表情·头像">表情·头像</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/404" title="电话通讯">电话通讯</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/578" title="电话">电话</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/580" title="短信">短信</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/582" title="通讯录">通讯录</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/584" title="通讯辅助">通讯辅助</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/406" title="交通导航">交通导航</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/586" title="地图·导航">地图·导航</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/588" title="交通票务">交通票务</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/590" title="公交·火车·航班">公交·火车·航班</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/592" title="打车">打车</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/594" title="违章查询">违章查询</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/392" title="生活服务">生活服务</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/476" title="餐厅推荐">餐厅推荐</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/478" title="外卖">外卖</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/480" title="生鲜配送">生鲜配送</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/484" title="找阿姨">找阿姨</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/486" title="洗衣">洗衣</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/488" title="做饭">做饭</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/490" title="按摩">按摩</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/492" title="美甲·美容">美甲·美容</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/494" title="租房·短租">租房·短租</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/496" title="搬家">搬家</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/498" title="买房">买房</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/500" title="家装">家装</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/506" title="租车·用车">租车·用车</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/508" title="代驾">代驾</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/510" title="买车">买车</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/512" title="养车">养车</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/482" title="团购·优惠券">团购·优惠券</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/502" title="电影">电影</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/504" title="演出">演出</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/514" title="快递">快递</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/516" title="求职·招聘">求职·招聘</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/518" title="分类信息">分类信息</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/520" title="营业厅">营业厅</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/394" title="运动健康">运动健康</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/522" title="运动·健身">运动·健身</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/524" title="减肥">减肥</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/526" title="健康">健康</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/528" title="用药·医疗">用药·医疗</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/396" title="教育培训">教育培训</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/530" title="语言学习·单词">语言学习·单词</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/532" title="考试·驾考">考试·驾考</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/534" title="词典·翻译">词典·翻译</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/536" title="在线教育">在线教育</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/538" title="课程表">课程表</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/540" title="作业">作业</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/542" title="儿童教育">儿童教育</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link" href="http://www.wandoujia.com/category/400" title="丽人母婴">丽人母婴</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/556" title="经期·孕期">经期·孕期</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/558" title="育儿社区">育儿社区</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/560" title="儿童教育">儿童教育</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/562" title="美容·美妆">美容·美妆</a></li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </li>
+        <li class=" has-subs nav-item game-tag-wrap">
+            <a class="game-tag first-link" href="http://www.wandoujia.com/category/game"><span>安卓游戏<i class="arrow-down"></i></span></a>
+
+            <ul class="game-popup tag-popup clearfix" style="display:none;">
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/241" title="休闲时间">休闲时间</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/275" title="切东西">切东西</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/277" title="找茬">找茬</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/279" title="减压">减压</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/281" title="宠物">宠物</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/283" title="答题">答题</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/285" title="音乐节奏">音乐节奏</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/287" title="益智">益智</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/289" title="解谜">解谜</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/253" title="跑酷竞速">跑酷竞速</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/353" title="跑酷">跑酷</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/355" title="赛车">赛车</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/357" title="摩托">摩托</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/359" title="赛艇">赛艇</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/361" title="飞机">飞机</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/237" title="宝石消除">宝石消除</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/259" title="方块">方块</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/261" title="宝石">宝石</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/263" title="连连看">连连看</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/265" title="祖玛">祖玛</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/267" title="泡泡龙">泡泡龙</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/269" title="卡通">卡通</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/245" title="网络游戏">网络游戏</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/303" title="RPG">RPG</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/305" title="动作竞技">动作竞技</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/307" title="策略">策略</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/309" title="卡牌">卡牌</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/311" title="经营模拟">经营模拟</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/251" title="动作射击">动作射击</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/341" title="横版">横版</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/343" title="射击">射击</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/345" title="3D">3D</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/347" title="飞行">飞行</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/349" title="坦克">坦克</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/351" title="狙击">狙击</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/243" title="扑克棋牌">扑克棋牌</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/291" title="斗地主">斗地主</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/293" title="棋类">棋类</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/295" title="麻将">麻将</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/297" title="桌游">桌游</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/299" title="德州扑克">德州扑克</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/301" title="纸牌">纸牌</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/255" title="儿童益智">儿童益智</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/363" title="拼图">拼图</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/365" title="识字">识字</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/367" title="智力开发">智力开发</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/369" title="数学">数学</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/239" title="塔防守卫">塔防守卫</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/271" title="闯关">闯关</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/273" title="抢滩登陆">抢滩登陆</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/257" title="体育格斗">体育格斗</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/371" title="街机">街机</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/373" title="篮球">篮球</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/375" title="足球">足球</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/377" title="网球">网球</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/379" title="台球">台球</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/381" title="其他球类">其他球类</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/247" title="角色扮演">角色扮演</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/313" title="回合制">回合制</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/315" title="即时战斗">即时战斗</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/317" title="养成">养成</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/319" title="武侠">武侠</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/321" title="魔幻">魔幻</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/323" title="动漫">动漫</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/325" title="三国">三国</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/327" title="修仙">修仙</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="parent-cate"><a class="cate-link"  href="http://www.wandoujia.com/category/249" title="经营策略">经营策略</a>
+
+                    <ul>
+
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/329" title="纸牌">纸牌</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/331" title="战棋">战棋</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/333" title="经营">经营</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/335" title="历史">历史</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/337" title="战争">战争</a></li>
+                        <li class="child-cate"><a href="http://www.wandoujia.com/category/339" title="DOTA">DOTA</a></li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </li>
+        <li class=" nav-item">
+            <a class="first-link" href="http://www.wandoujia.com/top/app"><span>排行榜</span></a>
+        </li>
+        <li class=" nav-item">
+            <a class="first-link" href="http://www.wandoujia.com/essential/app" ><span>装机必备</span></a>
+        </li>
+        <li class=" nav-item">
+            <a class="first-link" href="http://www.wandoujia.com/special">
+            <span>专题</span>
+            </a>
+        </li>
+        <li class=" nav-item">
+            <a class="first-link" href="http://www.wandoujia.com/award"><span>豌豆荚设计奖</span></a>
+        </li>
+        <li class="last nav-item">
+            <a target="_blank" class="first-link" href="http://www.wandoujia.com/group/"><span>游戏小组</span></a>
+        </li>
+    </ul>
+
+</nav>
+
+<div class="container">
+
+    <div class="crumb">
+        <div class="index" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="http://www.wandoujia.com/apps" itemprop="url">
+                <span itemprop="title">应用首页</span>
+            </a>
+        </div>
+        <span class="sep"> &gt; </span>
+        <span class="last">安卓软件分类</span>
+    </div>
+
+
+    <ul class="clearfix tag-box">
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/408" title="旅游出行">
+                <span class="cate-name">旅游出行</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/596" title="综合旅游服务">综合旅游服务</a>
+                        <a href="http://www.wandoujia.com/category/598" title="攻略">攻略</a>
+                        <a href="http://www.wandoujia.com/category/600" title="酒店·住宿">酒店·住宿</a>
+                        <a href="http://www.wandoujia.com/category/602" title="周边游">周边游</a>
+                        <a href="http://www.wandoujia.com/category/604" title="旅行工具·户外">旅行工具·户外</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/398" title="金融理财">
+                <span class="cate-name">金融理财</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/544" title="投资">投资</a>
+                        <a href="http://www.wandoujia.com/category/546" title="银行">银行</a>
+                        <a href="http://www.wandoujia.com/category/548" title="记账">记账</a>
+                        <a href="http://www.wandoujia.com/category/550" title="支付">支付</a>
+                        <a href="http://www.wandoujia.com/category/552" title="彩票">彩票</a>
+                        <a href="http://www.wandoujia.com/category/554" title="理财工具">理财工具</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/382" title="视频">
+                <span class="cate-name">视频</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/418" title="在线视频">在线视频</a>
+                        <a href="http://www.wandoujia.com/category/420" title="电视·直播">电视·直播</a>
+                        <a href="http://www.wandoujia.com/category/422" title="真人视频">真人视频</a>
+                        <a href="http://www.wandoujia.com/category/424" title="短视频">短视频</a>
+                        <a href="http://www.wandoujia.com/category/426" title="视频播放器">视频播放器</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/390" title="购物">
+                <span class="cate-name">购物</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/466" title="商城">商城</a>
+                        <a href="http://www.wandoujia.com/category/470" title="导购">导购</a>
+                        <a href="http://www.wandoujia.com/category/472" title="海淘">海淘</a>
+                        <a href="http://www.wandoujia.com/category/468" title="团购·优惠券">团购·优惠券</a>
+                        <a href="http://www.wandoujia.com/category/474" title="快递">快递</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate five_last">
+            <a class="cate-link" href="http://www.wandoujia.com/category/384" title="音乐">
+                <span class="cate-name">音乐</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/428" title="在线音乐">在线音乐</a>
+                        <a href="http://www.wandoujia.com/category/430" title="电台">电台</a>
+                        <a href="http://www.wandoujia.com/category/432" title="K歌">K歌</a>
+                        <a href="http://www.wandoujia.com/category/434" title="铃声">铃声</a>
+                        <a href="http://www.wandoujia.com/category/436" title="乐器">乐器</a>
+                        <a href="http://www.wandoujia.com/category/438" title="音乐播放器">音乐播放器</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/386" title="图像">
+                <span class="cate-name">图像</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/440" title="相机">相机</a>
+                        <a href="http://www.wandoujia.com/category/442" title="拍视频">拍视频</a>
+                        <a href="http://www.wandoujia.com/category/444" title="图片美化·滤镜">图片美化·滤镜</a>
+                        <a href="http://www.wandoujia.com/category/446" title="图片分享">图片分享</a>
+                        <a href="http://www.wandoujia.com/category/448" title="相册·图库">相册·图库</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/388" title="新闻阅读">
+                <span class="cate-name">新闻阅读</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/450" title="新闻·资讯">新闻·资讯</a>
+                        <a href="http://www.wandoujia.com/category/452" title="日报·杂志">日报·杂志</a>
+                        <a href="http://www.wandoujia.com/category/454" title="电子书">电子书</a>
+                        <a href="http://www.wandoujia.com/category/456" title="听书">听书</a>
+                        <a href="http://www.wandoujia.com/category/458" title="漫画">漫画</a>
+                        <a href="http://www.wandoujia.com/category/460" title="搞笑">搞笑</a>
+                        <a href="http://www.wandoujia.com/category/462" title="百科·问答">百科·问答</a>
+                        <a href="http://www.wandoujia.com/category/464" title="画报">画报</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/410" title="生活实用工具">
+                <span class="cate-name">生活实用工具</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/606" title="天气">天气</a>
+                        <a href="http://www.wandoujia.com/category/608" title="美食·菜谱">美食·菜谱</a>
+                        <a href="http://www.wandoujia.com/category/610" title="日历">日历</a>
+                        <a href="http://www.wandoujia.com/category/612" title="时钟">时钟</a>
+                        <a href="http://www.wandoujia.com/category/614" title="扫码">扫码</a>
+                        <a href="http://www.wandoujia.com/category/616" title="手工">手工</a>
+                        <a href="http://www.wandoujia.com/category/618" title="手电筒">手电筒</a>
+                        <a href="http://www.wandoujia.com/category/620" title="计算器">计算器</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/412" title="系统工具">
+                <span class="cate-name">系统工具</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/622" title="Wi-Fi">Wi-Fi</a>
+                        <a href="http://www.wandoujia.com/category/624" title="输入法">输入法</a>
+                        <a href="http://www.wandoujia.com/category/626" title="浏览器">浏览器</a>
+                        <a href="http://www.wandoujia.com/category/628" title="搜索·下载">搜索·下载</a>
+                        <a href="http://www.wandoujia.com/category/630" title="安全">安全</a>
+                        <a href="http://www.wandoujia.com/category/632" title="优化">优化</a>
+                        <a href="http://www.wandoujia.com/category/636" title="传输">传输</a>
+                        <a href="http://www.wandoujia.com/category/638" title="root">root</a>
+                        <a href="http://www.wandoujia.com/category/640" title="文件管理">文件管理</a>
+                        <a href="http://www.wandoujia.com/category/634" title="存储·云盘">存储·云盘</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate five_last">
+            <a class="cate-link" href="http://www.wandoujia.com/category/414" title="美化手机">
+                <span class="cate-name">美化手机</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/642" title="桌面·主题">桌面·主题</a>
+                        <a href="http://www.wandoujia.com/category/644" title="壁纸">壁纸</a>
+                        <a href="http://www.wandoujia.com/category/646" title="锁屏">锁屏</a>
+                        <a href="http://www.wandoujia.com/category/648" title="字体">字体</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/416" title="效率办公">
+                <span class="cate-name">效率办公</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/650" title="办公软件">办公软件</a>
+                        <a href="http://www.wandoujia.com/category/652" title="笔记">笔记</a>
+                        <a href="http://www.wandoujia.com/category/654" title="效率">效率</a>
+                        <a href="http://www.wandoujia.com/category/656" title="文件管理">文件管理</a>
+                        <a href="http://www.wandoujia.com/category/658" title="存储·云盘">存储·云盘</a>
+                        <a href="http://www.wandoujia.com/category/660" title="邮箱">邮箱</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/402" title="聊天社交">
+                <span class="cate-name">聊天社交</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/564" title="聊天">聊天</a>
+                        <a href="http://www.wandoujia.com/category/566" title="交友">交友</a>
+                        <a href="http://www.wandoujia.com/category/568" title="婚恋">婚恋</a>
+                        <a href="http://www.wandoujia.com/category/570" title="社区">社区</a>
+                        <a href="http://www.wandoujia.com/category/572" title="微博">微博</a>
+                        <a href="http://www.wandoujia.com/category/574" title="匿名">匿名</a>
+                        <a href="http://www.wandoujia.com/category/576" title="表情·头像">表情·头像</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/404" title="电话通讯">
+                <span class="cate-name">电话通讯</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/578" title="电话">电话</a>
+                        <a href="http://www.wandoujia.com/category/580" title="短信">短信</a>
+                        <a href="http://www.wandoujia.com/category/582" title="通讯录">通讯录</a>
+                        <a href="http://www.wandoujia.com/category/584" title="通讯辅助">通讯辅助</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate five_last">
+            <a class="cate-link" href="http://www.wandoujia.com/category/406" title="交通导航">
+                <span class="cate-name">交通导航</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/586" title="地图·导航">地图·导航</a>
+                        <a href="http://www.wandoujia.com/category/588" title="交通票务">交通票务</a>
+                        <a href="http://www.wandoujia.com/category/590" title="公交·火车·航班">公交·火车·航班</a>
+                        <a href="http://www.wandoujia.com/category/592" title="打车">打车</a>
+                        <a href="http://www.wandoujia.com/category/594" title="违章查询">违章查询</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/392" title="生活服务">
+                <span class="cate-name">生活服务</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/476" title="餐厅推荐">餐厅推荐</a>
+                        <a href="http://www.wandoujia.com/category/478" title="外卖">外卖</a>
+                        <a href="http://www.wandoujia.com/category/480" title="生鲜配送">生鲜配送</a>
+                        <a href="http://www.wandoujia.com/category/484" title="找阿姨">找阿姨</a>
+                        <a href="http://www.wandoujia.com/category/486" title="洗衣">洗衣</a>
+                        <a href="http://www.wandoujia.com/category/488" title="做饭">做饭</a>
+                        <a href="http://www.wandoujia.com/category/490" title="按摩">按摩</a>
+                        <a href="http://www.wandoujia.com/category/492" title="美甲·美容">美甲·美容</a>
+                        <a href="http://www.wandoujia.com/category/494" title="租房·短租">租房·短租</a>
+                        <a href="http://www.wandoujia.com/category/496" title="搬家">搬家</a>
+                        <a href="http://www.wandoujia.com/category/498" title="买房">买房</a>
+                        <a href="http://www.wandoujia.com/category/500" title="家装">家装</a>
+                        <a href="http://www.wandoujia.com/category/506" title="租车·用车">租车·用车</a>
+                        <a href="http://www.wandoujia.com/category/508" title="代驾">代驾</a>
+                        <a href="http://www.wandoujia.com/category/510" title="买车">买车</a>
+                        <a href="http://www.wandoujia.com/category/512" title="养车">养车</a>
+                        <a href="http://www.wandoujia.com/category/482" title="团购·优惠券">团购·优惠券</a>
+                        <a href="http://www.wandoujia.com/category/502" title="电影">电影</a>
+                        <a href="http://www.wandoujia.com/category/504" title="演出">演出</a>
+                        <a href="http://www.wandoujia.com/category/514" title="快递">快递</a>
+                        <a href="http://www.wandoujia.com/category/516" title="求职·招聘">求职·招聘</a>
+                        <a href="http://www.wandoujia.com/category/518" title="分类信息">分类信息</a>
+                        <a href="http://www.wandoujia.com/category/520" title="营业厅">营业厅</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/394" title="运动健康">
+                <span class="cate-name">运动健康</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/522" title="运动·健身">运动·健身</a>
+                        <a href="http://www.wandoujia.com/category/524" title="减肥">减肥</a>
+                        <a href="http://www.wandoujia.com/category/526" title="健康">健康</a>
+                        <a href="http://www.wandoujia.com/category/528" title="用药·医疗">用药·医疗</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/396" title="教育培训">
+                <span class="cate-name">教育培训</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/530" title="语言学习·单词">语言学习·单词</a>
+                        <a href="http://www.wandoujia.com/category/532" title="考试·驾考">考试·驾考</a>
+                        <a href="http://www.wandoujia.com/category/534" title="词典·翻译">词典·翻译</a>
+                        <a href="http://www.wandoujia.com/category/536" title="在线教育">在线教育</a>
+                        <a href="http://www.wandoujia.com/category/538" title="课程表">课程表</a>
+                        <a href="http://www.wandoujia.com/category/540" title="作业">作业</a>
+                        <a href="http://www.wandoujia.com/category/542" title="儿童教育">儿童教育</a>
+
+
+            </div>
+
+        </li>
+
+
+
+        <li class="parent-cate ">
+            <a class="cate-link" href="http://www.wandoujia.com/category/400" title="丽人母婴">
+                <span class="cate-name">丽人母婴</span>
+            </a>
+
+            <div class="child-cate">
+
+
+                        <a href="http://www.wandoujia.com/category/556" title="经期·孕期">经期·孕期</a>
+                        <a href="http://www.wandoujia.com/category/558" title="育儿社区">育儿社区</a>
+                        <a href="http://www.wandoujia.com/category/560" title="儿童教育">儿童教育</a>
+                        <a href="http://www.wandoujia.com/category/562" title="美容·美妆">美容·美妆</a>
+
+
+            </div>
+
+        </li>
+
+
+    </ul>
+
+
+
+        <a class="block-title" href="http://www.wandoujia.com/special/app?pos=w/appcategory/special_rec">热门软件专题推荐</a>
+
+    <ul class="app-box clearfix">
+            <li data-index="0" class="card special-card normal">
+                <div class="special-info">
+                    <a class="special-icon" href="http://www.wandoujia.com/special/150523meitianav">
+                        <img src="http://img.wdjimg.com/mms/banner/2/03/777866707bf96e967a7b9d1035115032_818_320.jpeg" alt="每天都有新惊喜"/>
+                    </a>
+                    <div class="special-meta">
+                        <span>15 款应用</span>
+
+                        <span>11338 人下载</span>
+
+                        <a class="see-btn" href="http://www.wandoujia.com/special/150523meitianav">查看</a>
+                    </div>
+                </div>
+
+                <ul class="s-applist">
+
+
+
+    <li data-pn="com.wandoujia.eyepetizer" class="special-three" data-suffix="%96%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6ImNvbS53YW5kb3VqaWEuZXllcGV0aXplciJ9fQWdj01B0000869766">
+        <a class="corner" href="http://www.wandoujia.com/apps/com.wandoujia.eyepetizer"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/com.wandoujia.eyepetizer">
+                <img src="http://img.wdjimg.com/mms/icon/v1/1/dc/50a4c597efe027933e3a3f90b0afbdc1_48_48.png" width="48" height="48" alt="开眼 Eyepetizer" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/com.wandoujia.eyepetizer" title="开眼 Eyepetizer" class="name">开眼 Eyepetizer</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">94 万人安装</span>
+                <span class="dot">・</span>
+                <span title="8.5MB">8.5MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="94 万" data-like="2238" data-name="开眼 Eyepetizer" data-pn="com.wandoujia.eyepetizer" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/com.wandoujia.eyepetizer/binding" data-track="appcategory-ndownload-com.wandoujia.eyepetizer"
+
+            >下载</a>
+
+
+    </li>
+
+
+
+
+
+    <li data-pn="com.mmmono.mono" class="special-three" data-suffix="%8A%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6ImNvbS5tbW1vbm8ubW9ubyJ9fQWdj01B00007a6286">
+        <a class="corner" href="http://www.wandoujia.com/apps/com.mmmono.mono"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/com.mmmono.mono">
+                <img src="http://img.wdjimg.com/mms/icon/v1/0/b8/a84c84f00648871a0ed20e7b935ffb80_48_48.png" width="48" height="48" alt="MONO" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/com.mmmono.mono" title="MONO" class="name">MONO</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">79 万人安装</span>
+                <span class="dot">・</span>
+                <span title="32.85MB">32.85MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="79 万" data-like="299" data-name="MONO" data-pn="com.mmmono.mono" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/com.mmmono.mono/binding" data-track="appcategory-ndownload-com.mmmono.mono"
+
+            >下载</a>
+
+
+    </li>
+
+
+
+
+
+    <li data-pn="com.douban.daily" class="special-three" data-suffix="%8B%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6ImNvbS5kb3ViYW4uZGFpbHkifX0Wdj01B00007b3556">
+        <a class="corner" href="http://www.wandoujia.com/apps/com.douban.daily"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/com.douban.daily">
+                <img src="http://img.wdjimg.com/mms/icon/v1/f/7d/9ebf13a43f0bda3c5de34c5b603b17df_48_48.png" width="48" height="48" alt="豆瓣一刻" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/com.douban.daily" title="豆瓣一刻" class="name">豆瓣一刻</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">52 万人安装</span>
+                <span class="dot">・</span>
+                <span title="6.74MB">6.74MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="52 万" data-like="103" data-name="豆瓣一刻" data-pn="com.douban.daily" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/com.douban.daily/binding" data-track="appcategory-ndownload-com.douban.daily"
+
+            >下载</a>
+
+
+    </li>
+
+
+                </ul>
+            </li>
+            <li data-index="1" class="card special-card normal">
+                <div class="special-info">
+                    <a class="special-icon" href="http://www.wandoujia.com/special/150126yinyueav">
+                        <img src="http://img.wdjimg.com/mms/banner/5/e6/a8458f4f3b00c8a409bc500a2109ce65_818_320.jpeg" alt="音乐应用精选"/>
+                    </a>
+                    <div class="special-meta">
+                        <span>10 款应用</span>
+
+                        <span>13446 人下载</span>
+
+                        <a class="see-btn" href="http://www.wandoujia.com/special/150126yinyueav">查看</a>
+                    </div>
+                </div>
+
+                <ul class="s-applist">
+
+
+
+    <li data-pn="net.luoo.LuooFM" class="special-three" data-suffix="%8A%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6Im5ldC5sdW9vLkx1b29GTSJ9fQWdj01B00007a6286">
+        <a class="corner" href="http://www.wandoujia.com/apps/net.luoo.LuooFM"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/net.luoo.LuooFM">
+                <img src="http://img.wdjimg.com/mms/icon/v1/4/42/094331a9849756c6b78f8e803b5fc424_48_48.png" width="48" height="48" alt="落网" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/net.luoo.LuooFM" title="落网" class="name">落网</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">52 万人安装</span>
+                <span class="dot">・</span>
+                <span title="19.87MB">19.87MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="52 万" data-like="969" data-name="落网" data-pn="net.luoo.LuooFM" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/net.luoo.LuooFM/binding" data-track="appcategory-ndownload-net.luoo.LuooFM"
+
+            >下载</a>
+
+
+    </li>
+
+
+
+
+
+    <li data-pn="com.sing.client" class="special-three" data-suffix="%8A%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6ImNvbS5zaW5nLmNsaWVudCJ9fQWdj01B00007a6286">
+        <a class="corner" href="http://www.wandoujia.com/apps/com.sing.client"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/com.sing.client">
+                <img src="http://img.wdjimg.com/mms/icon/v1/1/1f/710d2056ba6e4a4c62fe955f982a61f1_48_48.png" width="48" height="48" alt="5sing原创音乐" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/com.sing.client" title="5sing原创音乐" class="name">5sing原创音乐</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">94 万人安装</span>
+                <span class="dot">・</span>
+                <span title="13.3MB">13.3MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="94 万" data-like="464" data-name="5sing原创音乐" data-pn="com.sing.client" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/com.sing.client/binding" data-track="appcategory-ndownload-com.sing.client"
+
+            >下载</a>
+
+
+    </li>
+
+
+
+
+
+    <li data-pn="com.lovinc.radio" class="special-three" data-suffix="%8B%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6ImNvbS5sb3ZpbmMucmFkaW8ifX0Wdj01B00007b3556">
+        <a class="corner" href="http://www.wandoujia.com/apps/com.lovinc.radio"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/com.lovinc.radio">
+                <img src="http://img.wdjimg.com/mms/icon/v1/5/ed/8db6d509a8295e4d601137687df4ced5_48_48.png" width="48" height="48" alt="LavaRadio" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/com.lovinc.radio" title="LavaRadio" class="name">LavaRadio</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">25 万人安装</span>
+                <span class="dot">・</span>
+                <span title="17.28MB">17.28MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="25 万" data-like="379" data-name="LavaRadio" data-pn="com.lovinc.radio" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/com.lovinc.radio/binding" data-track="appcategory-ndownload-com.lovinc.radio"
+
+            >下载</a>
+
+
+    </li>
+
+
+                </ul>
+            </li>
+            <li data-index="2" class="card special-card normal">
+                <div class="special-info">
+                    <a class="special-icon" href="http://www.wandoujia.com/special/smart1006">
+                        <img src="http://img.wdjimg.com/mms/banner/d/31/d7201751b2810200d4ef69748a86031d_854_320.jpeg" alt="抢红包快人一步"/>
+                    </a>
+                    <div class="special-meta">
+                        <span>13 款应用</span>
+
+                        <span>5898 人下载</span>
+
+                        <a class="see-btn" href="http://www.wandoujia.com/special/smart1006">查看</a>
+                    </div>
+                </div>
+
+                <ul class="s-applist">
+
+
+
+    <li data-pn="com.wandoujia.roshan" class="special-three" data-suffix="%90%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6ImNvbS53YW5kb3VqaWEucm9zaGFuIn19Wdj01B0000807363">
+        <a class="corner" href="http://www.wandoujia.com/apps/com.wandoujia.roshan"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/com.wandoujia.roshan">
+                <img src="http://img.wdjimg.com/mms/icon/v1/d/08/d9b522a8317264107ac2c3735af7c08d_48_48.png" width="48" height="48" alt="豌豆荚 Smart 锁屏" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/com.wandoujia.roshan" title="豌豆荚 Smart 锁屏" class="name">豌豆荚 Smart 锁屏</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">229 万人安装</span>
+                <span class="dot">・</span>
+                <span title="11.73MB">11.73MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="229 万" data-like="2251" data-name="豌豆荚 Smart 锁屏" data-pn="com.wandoujia.roshan" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/com.wandoujia.roshan/binding" data-track="appcategory-ndownload-com.wandoujia.roshan"
+
+            >下载</a>
+
+
+    </li>
+
+
+
+
+
+    <li data-pn="com.qianwang.qianbao" class="special-three" data-suffix="%90%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6ImNvbS5xaWFud2FuZy5xaWFuYmFvIn19Wdj01B0000807363">
+        <a class="corner" href="http://www.wandoujia.com/apps/com.qianwang.qianbao"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/com.qianwang.qianbao">
+                <img src="http://img.wdjimg.com/mms/icon/v1/7/fa/8964c6035dc6cf91ee6e65bfc6af2fa7_48_48.png" width="48" height="48" alt="钱宝" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/com.qianwang.qianbao" title="钱宝" class="name">钱宝</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">103 万人安装</span>
+                <span class="dot">・</span>
+                <span title="23.72MB">23.72MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="103 万" data-like="193" data-name="钱宝" data-pn="com.qianwang.qianbao" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/com.qianwang.qianbao/binding" data-track="appcategory-ndownload-com.qianwang.qianbao"
+
+            >下载</a>
+
+
+    </li>
+
+
+
+
+
+    <li data-pn="com.brightcells.khb" class="special-three" data-suffix="%8F%00eyJhcHBEb3dubG9hZCI6eyJkb3dubG9hZFR5cGUiOiJkb3dubG9hZF9ieV9wYWNrYWdlX25hbWUiLCJwYWNrYWdlTmFtZSI6ImNvbS5icmlnaHRjZWxscy5raGIifX0Wdj01B00007f3197">
+        <a class="corner" href="http://www.wandoujia.com/apps/com.brightcells.khb"></a>
+
+        <div class="icon-wrap">
+
+            <a href="http://www.wandoujia.com/apps/com.brightcells.khb">
+                <img src="http://img.wdjimg.com/mms/icon/v1/8/98/c747f94f65b6007f6902ee3849b6f988_48_48.png" width="48" height="48" alt="快红包" class="icon" />
+            </a>
+
+        </div>
+
+        <div class="app-desc">
+
+            <a href="http://www.wandoujia.com/apps/com.brightcells.khb" title="快红包" class="name">快红包</a>
+
+            <div class="meta">
+
+
+
+                    <a class="tag gooddev" href="http://www.wandoujia.com/manual_testing?from=www" target="_blank" rel="nofollow" title="编辑亲测基本可用，无明显恶意行为。"></a>
+
+
+
+                <span class="install-count">11 万人安装</span>
+                <span class="dot">・</span>
+                <span title="33.96MB">33.96MB</span>
+
+            </div>
+
+        </div>
+
+
+
+
+        <a
+                    data-oe="web"
+                data-type="bind"
+                data-feat="binded"
+            data-install="11 万" data-like="80" data-name="快红包" data-pn="com.brightcells.khb" class="i-source install-btn" rel="nofollow" style="display:block;" href="http://www.wandoujia.com/apps/com.brightcells.khb/binding" data-track="appcategory-ndownload-com.brightcells.khb"
+
+            >下载</a>
+
+
+    </li>
+
+
+                </ul>
+            </li>
+    </ul>
+
+</div>
+
+
+<footer>
+
+        <div class="ft-inner">
+        <dl class="clearfix">
+            <dt>我们的产品</dt>
+            <dd>
+                <ul>
+                    <li><a href="http://www.wandoujia.com/android">豌豆荚手机客户端</a></li>
+                    <li><a href="http://www.wandoujia.com/yilan?utm_source=homepage&utm_campaign=routine&utm_medium=internal&utm_content=footer">豌豆荚一览</a></li>
+                    <li><a href="http://www.wandoujia.com/eyepetizer">Eyepetizer 开眼</a></li>
+                    <li><a href="http://www.wandoujia.com/screen">豌豆荚 Smart 锁屏</a></li>
+                    <li><a href="http://www.wandoujia.com/pay">豌豆币充值中心</a></li>
+                    <li><a href="http://dl.wandoujia.com/files/mac/AppInstaller_v1.0.7.dmg">应用安装器 Mac 版</a></li>
+                </ul>
+            </dd>
+            <dt>豌豆实验室</dt>
+            <dd>
+                <ul>
+                    <li><a href="http://www.wandoujia.com/about">关于我们</a></li>
+                    <li><a href="http://www.wandoujia.com/join" target="_blank">加入我们</a></li>
+                    <li><a href="http://developer.wandoujia.com/">开发者中心</a></li>
+                    <li><a href="http://uowechat.wandoujia.com/feedback">联系商务合作</a></li>
+                    <li><a href="http://developer.wandoujia.com/ads/tuiguangjieshao/">广告业务合作</a></li>
+                    <li><a href="http://developer.wandoujia.com/games/mmo/">网游联运接入</a></li>
+                    <li><a href="http://developer.wandoujia.com/games/single-player/">单机联运接入</a></li>
+                </ul>
+            </dd>
+            <dt>帮助与支持</dt>
+            <dd>
+                <ul>
+                    <li><a href="http://www.wandoujia.com/help">用户帮助中心</a></li>
+                    <li><a rel="nofollow" href="http://www.wandoujia.com/terms">使用条款</a></li>
+                    <li><a rel="nofollow" href="http://www.wandoujia.com/privacy">用户隐私</a></li>
+                    <li><a rel="nofollow" href="http://www.wandoujia.com/intellectual_property">知识产权保护声明</a></li>
+                    <li><a rel="nofollow" href="http://www.wandoujia.com/tutelage">家长监护系统</a></li>
+                    <li><a rel="nofollow" href="http://www.wandoujia.com/help/?do=tousu">我要举报</a></li>
+                    <li>
+                        <a rel="nofollow" href="http://www.12377.cn/" target="_blank">中国互联网举报中心</a>
+                        <span class="china-gov-report"></span>
+                    </li>
+                    <li><a rel="nofollow" href="http://www.12377.cn/node_548446.htm" target="_blank">下载举报应用</a></li>
+                </ul>
+            </dd>
+        </dl>
+
+        <div class="socials">
+            <a href="http://weibo.com/wandoulabs" title="豌豆荚官方微博" rel="nofollow" class="sc-icon weibo-icon" target="_blank"></a>
+            <a href="http://twitter.com/wandoujia" title="豌豆荚@twitter" rel="nofollow" class="sc-icon twitter-icon" target="_blank"></a>
+            <a href="http://bbs.wandoujia.com/" title="豌豆荚论坛" rel="nofollow" class="sc-icon bbs-icon" target="_blank"></a>
+            <a href="http://www.wandoujia.com/blog/" title="豌豆荚 Blog" rel="nofollow" class="sc-icon blog-icon" target="_blank"></a>
+        </div>
+
+        <div class="tel24">
+            <p>24小时客服电话</p>
+            <p>010-62957238</p>
+            <p>客服邮箱</p>
+            <p><a href="mailto:support@wandoujia.com">support@wandoujia.com</a></p>
+        </div>
+
+        <div class="split"></div>
+    </div>
+
+    <section class="copyright">北京卓易讯畅科技有限公司 版权所有 2010 - 2016</section>
+
+    <p class="intellectual">除非特别注明，应用程序由第三方市场提供，豌豆荚仅根据你的指令提供搜索结果链接，与出处无关，详情请参阅
+        <a target="_blank" href="http://www.wandoujia.com/intellectual_property" rel="nofollow">知识产权保护声明</a>
+    </p>
+    <p class="useless">
+        <i class="guohui"></i>
+        <a target="_blank" rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020117"  class="meta">京公网安备 11010802020117号</a>
+        <span class="meta">・</span>
+        <a target="_blank" rel="nofollow" href="http://www.miitbeian.gov.cn" class="meta">京ICP备11035207号</a>
+        <span class="meta">・</span>
+        <a target="_blank" rel="nofollow" href="javascript:;" class="meta">京网文[2016]0801-073号</a>
+    </p>
+
+    <div class="links">
+        <span>友情链接</span>
+        <a href="http://www.qyer.com/" target="_blank">穷游出境游</a>
+        <a href="http://www.vmall.com" target="_blank">华为手机</a>
+        <a href="http://www.pc6.com/" target="_blank">PC6 软件下载</a>
+        <a href="http://www.wandoujia.com/tag/game" target="_blank">安卓游戏</a>
+        <a href="http://www.onlinedown.net/" target="_blank">华军软件园</a>
+        <a href="http://www.wandoujia.com/tag/app" target="_blank">安卓软件</a>
+        <a href="http://soft.hao123.com/" target="_blank">hao123 软件</a>
+        <a href="http://www.duote.com/" target="_blank">多特软件下载</a>
+        <a href="http://www.3987.com/" target="_blank">统一下载站</a>
+        <a href="http://www.gfan.com/" target="_blank">机锋网</a>
+        <a href="http://bbs.mumayi.com/" target="_blank">木蚂蚁安卓论坛</a>
+        <a href="http://motu.baidu.com/" target="_blank">百度魔图</a>
+        <a href="http://www.eoemarket.com/" target="_blank">优亿市场</a>
+        <a href="http://www.33lc.com/" target="_blank">绿茶软件下载</a>
+        <a href="http://www.rsdown.cn/" target="_blank">红软基地</a>
+        <a href="http://www.xiaopi.com/" target="_blank">小皮游戏网</a>
+        <a href="http://www.xpgod.com/" target="_blank">系统天堂</a>
+        <a href="http://www.cnd8.com/" target="_blank">星星软件站</a>
+        <a href="http://www.orsoon.com/" target="_blank">未来软件站</a>
+        <a href="http://www.syoits.com/" target="_blank">金运之旅</a>
+        <a href="http://www.yesky.com/" target="_blank">天极网</a>
+        <a href="http://mydown.yesky.com/" target="_blank">软件下载</a>
+        <a href="http://www.yzmg.com/" target="_blank">亿智蘑菇</a>
+        <a href="http://www.znds.com" target="_blank">智能电视网</a>
+        <a href="http://www.zhuantilan.com" target="_blank">软件下载</a>
+        <a href="http://www.muzhiwan.com" target="_blank">安卓游戏</a>
+        <a href="http://bbs.zhiyoo.com" target="_blank">智友论坛</a>
+        <a href="http://www.yxbao.com/" target="_blank">单机游戏大全</a>
+        <a href="http://www.mgyun.com" target="_blank">刷机大师</a>
+        <a href="http://www.romjd.com" target="_blank">ROM基地</a>
+        <a href="http://www.downkr.com/" target="_blank">当客软件园</a>
+        <a href="http://www.9game.cn/" target="_blank">手机游戏</a>
+        <a href="http://www.dangbei.com/" target="_blank">当贝市场</a>
+    </div>
+</footer>
+
+<div class="qr-box">
+    <div class="qr-box-inner">
+        <img src="//www.wandoujia.com/qr?s=4&c=http://www.wandoujia.com?qr=1" alt="豌豆荚安卓版二维码" class="phoenix-qr" />
+        <p>扫一扫安装<br />豌豆荚安卓客户端</p>
+    </div>
+</div>
+<div class="wanna-report">
+    <a rel="nofollow" href="http://www.wandoujia.com/help/?do=tousu">举<br>报</a>
+</div>
+
+
+
+
+    <script src="//st.wdjcdn.com/apps/javascripts/e6a3a3de.pc-module.js"></script>
+
+
+
+    <!-- Baidu Button BEGIN -->
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=2&amp;mini=1&amp;pos=right&amp;uid=991137" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+    </script>
+    <!-- Baidu Button END -->
+
+
+<script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15790641-46', 'wandoujia.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc680f6745efe87a8fabe78e376c4b5f9' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+</html>
