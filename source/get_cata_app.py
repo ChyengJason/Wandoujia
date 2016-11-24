@@ -1,11 +1,121 @@
 import json
-import bs4
+import os
+import time
+import random
+
+import re
 from bs4 import BeautifulSoup
 from source._const import const
 import requests
 
+from source.get_catagory import CataInfo
+
+
 class CataAppInfo(object):
-    def __init__(self,cata_url):
+    def __init__(self,cata_title,cata_url):
+        self.cata_title = cata_title
         self.cata_url = cata_url
-        self.app_count = 0
-        self.app
+        self.cata_apps_count = 0
+        self.cata_apps = {}
+        self.apps_page_num = 0
+        self.file_name = "../file/"+self.cata_title+".json"
+        self.apps_headers = {
+        'user-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0',
+        'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language':'en-US,en;q=0.5',
+        'Accept-Encoding':'gzip,deflate,br',
+        'Connetion':'keep-alive'
+        }
+
+    #获取cata_url的html
+    def get_html(self):
+        response = requests.get(self.cata_url,headers = self.apps_headers)
+        return response.text
+
+    #测试使用
+    def open_html(self):
+        f = open("../file/html4.txt","r")
+        response = f.read()
+        return response
+
+    def get_apps_page_num(self,html):
+        soup = BeautifulSoup(html,"html.parser")
+        total_page_num = 0
+        # for child in soup.html.body:
+        #     if type(child)==bs4.element.Tag:
+        #         print(child
+        page_list = soup.select(".page-item")
+        for page_content in page_list:
+            if page_content.string.isdigit() == True and int(page_content.string) > total_page_num:
+                total_page_num = int(page_content.string)
+        self.apps_page_num = total_page_num
+
+    def get_apps_content_html(self):
+        if self.apps_page_num<=0:
+            print("未初始化获取页数")
+        else:
+            for i in range(0,self.apps_page_num):
+                url = self.cata_url+"_"+str(i+1)
+                response = requests.get(url,headers = self.apps_headers)
+                html = response.text
+                self.parse_apps_content_html(html)
+                time.sleep(random.randint(3,5))
+
+        self.cata_apps_count = len(self.cata_apps)
+        self.save_json_file()
+        print(self.cata_title+"总数："+self.cata_apps_count)
+
+    def parse_apps_content_html(self,html):
+        soup = BeautifulSoup(html,"html.parser")
+        info_list = soup.select(".app-desc")
+
+        for info_soup in info_list:
+            url_info = info_soup.select(".name")[0]
+            install_info = info_soup.select(".install-count")[0]
+            apk_info = info_soup.find('span',attrs={"title": re.compile("")})
+            title = url_info["title"]
+            href = url_info["href"]
+            install_num = install_info.string
+            apk = apk_info['title']
+            comment = info_soup.select(".comment")[0].string
+            app_info = {}
+            app_info.setdefault("url","")
+            app_info["url"]=href
+            app_info.setdefault("install","")
+            app_info["install"]=install_num
+            app_info.setdefault("apk","")
+            app_info["apk"]=apk
+            app_info.setdefault("comment","")
+            if comment is not None:
+                app_info["comment"]=comment.strip()
+            self.cata_apps.setdefault(title,{})
+            self.cata_apps[title] = app_info
+
+    def save_json_file(self):
+    # Writing JSON data
+        with open(self.file_name, 'w') as f:
+            json.dump(self.cata_apps, f , ensure_ascii=False)
+
+    def load_json_file(self,title,):
+        self.cata_apps.clear()
+        self.cata_apps_count = 0
+        self.cata_apps = json.load(open(self.file_name))
+        self.cata_apps_count = len(self.cata_apps)
+
+if __name__ == '__main__':
+    cataInfo = CataInfo()
+    cataInfo.load_json_file()
+
+    for key in cataInfo.cata.keys():
+        file_name = key+".json"
+        if os.path.exists(file_name):
+            print(file_name)
+        else:
+            print("正在下载 "+key+" : "+cataInfo.cata[key])
+            cataAppInfo = CataAppInfo(key,cataInfo.cata[key])
+            html = cataAppInfo.get_html()
+            # html = cataAppInfo.open_html()
+            cataAppInfo.get_apps_page_num(html)
+            cataAppInfo.get_apps_content_html()
+            cataAppInfo.parse_apps_content_html(html)
+            cataAppInfo.save_json_file()

@@ -16,3 +16,9 @@ const = _const()
 const.WANDOUJIA_CATA_URL = "http://www.wandoujia.com/category/app"
 #豌豆荚目录分类的Json文件路径
 const.WANDOUJIA_CATA_JSON_FILE = "../file/wandoujia_file.json"
+#豌豆荚app目录信息Json文件路径
+const.WANDOUJIA_APPS_JSON_FILE = "../file/apps_file.json"
+
+'''豌豆荚测试使用'''
+#豌豆荚旅游出行URL
+const.WANDOUJIA_CARA_TRIP_URL = "http://www.wandoujia.com/category/408"
