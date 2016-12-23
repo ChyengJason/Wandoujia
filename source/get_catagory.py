@@ -5,6 +5,7 @@ from source._const import const
 import requests
 import datetime
 
+# 获取所有目录信息
 class CataInfo(object):
 
     def __init__(self):
@@ -63,11 +64,11 @@ class CataInfo(object):
 
 if __name__ == '__main__':
     cataInfo = CataInfo()
-    #html = cataInfo.get_html()
-    #cataInfo.parse_html(html)
-    #cataInfo.parse_file()
+    html = cataInfo.get_html()
+    cataInfo.parse_html(html)
+    cataInfo.parse_file()
     print(cataInfo)
 
-    #cataInfo.save_json_file()
-    cataInfo.load_json_file()
-    print(cataInfo)
+    cataInfo.save_json_file()
+    # cataInfo.load_json_file()
+    # print(cataInfo)

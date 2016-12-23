@@ -10,7 +10,7 @@ import requests
 
 from source.get_catagory import CataInfo
 
-
+#获取所有app信息
 class CataAppInfo(object):
     def __init__(self,cata_title,cata_url):
         self.cata_title = cata_title
@@ -63,7 +63,7 @@ class CataAppInfo(object):
 
         self.cata_apps_count = len(self.cata_apps)
         self.save_json_file()
-        print(self.cata_title+"总数："+self.cata_apps_count)
+        print(self.cata_title+"总数："+str(self.cata_apps_count))
 
     def parse_apps_content_html(self,html):
         soup = BeautifulSoup(html,"html.parser")
@@ -96,7 +96,7 @@ class CataAppInfo(object):
         with open(self.file_name, 'w') as f:
             json.dump(self.cata_apps, f , ensure_ascii=False)
 
-    def load_json_file(self,title,):
+    def load_json_file(self,title):
         self.cata_apps.clear()
         self.cata_apps_count = 0
         self.cata_apps = json.load(open(self.file_name))

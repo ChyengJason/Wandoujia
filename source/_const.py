@@ -14,10 +14,14 @@ class _const:
 const = _const()
 #豌豆荚目录分类的URL
 const.WANDOUJIA_CATA_URL = "http://www.wandoujia.com/category/app"
+#豌豆荚存放文件夹路径
+const.WANDOUJIA_DIR ="../file/"
 #豌豆荚目录分类的Json文件路径
-const.WANDOUJIA_CATA_JSON_FILE = "../file/wandoujia_file.json"
+const.WANDOUJIA_CATA_JSON_FILE = const.WANDOUJIA_DIR+"wandoujia_file.json"
 #豌豆荚app目录信息Json文件路径
-const.WANDOUJIA_APPS_JSON_FILE = "../file/apps_file.json"
+const.WANDOUJIA_APPS_JSON_FILE = const.WANDOUJIA_DIR+"apps_file.json"
+#豌豆荚app评论信息文件夹路径
+const.WANDOUJIA_APPS_COMMENT_DIR = const.WANDOUJIA_DIR+"apps_comments/"
 
 '''豌豆荚测试使用'''
 #豌豆荚旅游出行URL
