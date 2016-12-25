@@ -5,10 +5,11 @@ import random
 
 import re
 from bs4 import BeautifulSoup
+
+from source.GetCatagory import CataInfo
 from source._const import const
 import requests
 
-from source.get_catagory import CataInfo
 
 #获取所有app信息
 class CataAppInfo(object):
