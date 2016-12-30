@@ -3,7 +3,6 @@ import traceback
 
 from source.MongoConn import MongoConn
 
-
 def check_connected(conn):
     #检查是否连接成功
     if not conn.connected:
@@ -127,11 +126,11 @@ def create_index(table,colum,isUnique):
     except Exception:
         print(traceback.format_exc())
 
-def distinct_count(table,distinct_tag):
+def distinct_count(table,distinct_tag,value=None):
     try:
         my_conn = MongoConn()
         check_connected(my_conn)
-        return my_conn.db[table].find().distinct(distinct_tag)
+        return my_conn.db[table].find(value).distinct(distinct_tag)
     except Exception:
         print(traceback.format_exc())
 

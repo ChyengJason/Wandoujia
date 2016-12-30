@@ -62,8 +62,8 @@ def saveAppToDB(appinfo):
     if not MongoUtil.isExist("app_table",post):
         MongoUtil.insert("app_table",post)
 
-    cur = MongoUtil.find("app_table",{"catagory":appinfo.cata})
-    print([i for i in cur])
+    # cur = MongoUtil.find("app_table",{"catagory":appinfo.cata})
+    # print([i for i in cur])
 
 def deliveryWords(appinfo,filename):
     print(appinfo.name)
@@ -76,7 +76,8 @@ def deliveryWords(appinfo,filename):
         return
     appid = result['_id']
 
-    result = MongoUtil.find_one("wordlocation_table",{"appid":appid})
+    result = MongoUtil.find_one(appinfo.cata,{"appid":appid})
+    # result = MongoUtil.find_one("wordlocation_table",{"appid":appid})
     if result!=None:
         print("\""+appinfo.cata+" "+appinfo.name+"\" 已经分词存入数据库，不必重复")
         return
@@ -106,71 +107,86 @@ def deliveryWords(appinfo,filename):
                 post_location["appid"]=appid
                 post_location["wordid"]=wordid
                 post_location["location"]=line_num
-                MongoUtil.insert("wordlocation_table",post_location)
+                MongoUtil.insert(appinfo.cata,post_location)
+                # MongoUtil.insert("wordlocation_table",post_location)
+
+def saveCataCommentsDelivery(cataname,catafilename):
+    print("分词目录："+cataname)
+    apps = json.load(open(catafilename))
+    for app in apps.items():
+        name = app[0].strip().replace("/"," ")
+        install = app[1]["install"]
+        comment = app[1]["comment"]
+        url = app[1]["url"]
+        apk = app[1]["apk"]
+        #生成appinfo
+        appinfo = AppInfo(cataname,name,comment,install,url,apk)
+        #app评论路径
+        appcomment_path = const.WANDOUJIA_APPS_COMMENT_DIR+cataname+"/"+appinfo.name
+
+        # print(appcomment_path,end=" -->")
+        if not os.path.exists(appcomment_path):
+           # print(appcomment_path,end=" -->")
+           # print("文件不存在")
+            continue
+        if os.path.getsize(appcomment_path)==0:
+           # print(appcomment_path,end=" -->")
+           # print("文件为空")
+            continue
+
+        deliveryWords(appinfo,appcomment_path)
 
 def saveCommentsDelivery():
     catas = json.load(open(const.WANDOUJIA_CATA_JSON_FILE))
     for cataname in catas:
         cataname = cataname.strip()
         catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
-        apps = json.load(open(catafilename))
-        for app in apps.items():
-            name = app[0].strip().replace("/"," ")
-            install = app[1]["install"]
-            comment = app[1]["comment"]
-            url = app[1]["url"]
-            apk = app[1]["apk"]
-            #生成appinfo
-            appinfo = AppInfo(cataname,name,comment,install,url,apk)
-            #app评论路径
-            appcomment_path = const.WANDOUJIA_APPS_COMMENT_DIR+cataname+"/"+appinfo.name
-
-            # print(appcomment_path,end=" -->")
-            if not os.path.exists(appcomment_path):
-                # print(appcomment_path,end=" -->")
-                # print("文件不存在")
-                continue
-            if os.path.getsize(appcomment_path)==0:
-                # print(appcomment_path,end=" -->")
-                # print("文件为空")
-                continue
-
-            deliveryWords(appinfo,appcomment_path)
-
-def test():
-    result = MongoUtil.find_one("app_table",{"appname":"陌陌"})
-    appid = result["_id"]
-    results = MongoUtil.find("wordlocation_table",{"appid":appid})
-    for result in results:
-        wordid = result["wordid"]
-
-    # print(type(result[0]))
-    # print(result["wordid"])
-        rs = MongoUtil.find("word_table",{"_id":wordid})
-        for r in rs:
-            print(r)
+        saveCataAppsToDB(cataname,catafilename)
 
 def showData():
     print("总app数量："+str(MongoUtil.count("app_table")))
-    result = MongoUtil.distinct_count("wordlocation_table","appid")
-    print("获取评论的app数量："+str(len(result)))
-    print("wordlocation数量："+str(MongoUtil.count("wordlocation_table")))
+    locationCount = 0
+    catas = json.load(open(const.WANDOUJIA_CATA_JSON_FILE))
+    for cataname in catas:
+        cataname = cataname.strip()
+        print(cataname+" 数量："+str(MongoUtil.count(cataname)))
+        locationCount += len(MongoUtil.distinct_count(cataname,"appid"))
+    print("获取评论的app数量："+str(locationCount),end="\n\n")
     print("word数量："+str(MongoUtil.count("word_table")))
+
+def showData(cataname):
+    print("总app数量："+str(MongoUtil.count("app_table")))
+    print("word数量："+str(MongoUtil.count("word_table")))
+    appCount = MongoUtil.find("app_table",{"catagory":cataname}).count()
+    print(cataname+"的 app数量: "+str(appCount))
+    locationCount = 0
+    cataname = cataname.strip()
+    print(cataname+"的 location 数量："+str(MongoUtil.count(cataname)))
+    locationCount += len(MongoUtil.distinct_count(cataname,"appid"))
+    print("已获取评论的 app数量："+str(locationCount))
+    print("未获取评论的 app数量："+str(appCount-locationCount))
 
 def createDex():
     MongoUtil.create_index("app_table","appid",False)
     MongoUtil.create_index("word_table","word",False)
-    MongoUtil.create_index("wordlocation_table","appid",False)
-    MongoUtil.create_index("wordlocation_table","wordid",False)
+    catas = json.load(open(const.WANDOUJIA_CATA_JSON_FILE))
+    for cataname in catas:
+        cataname = cataname.strip()
+        MongoUtil.create_index(cataname,"appid",False)
+        MongoUtil.create_index(cataname,"wordid",False)
+
+def deleteAppDieveryWord(cataname,appname):
+    id = MongoUtil.find_one("app_table",{"appname":appname})["_id"]
+    result = MongoUtil.remove(cataname,{"appid":id})
+    print("已从“"+cataname+"”数据库中删除“"+appname+"”应用的分词信息")
 
 if __name__ == '__main__':
-    #saveAllcatasAppsToDB()
+    # saveAllcatasAppsToDB()
     # saveCommentsDelivery()
-    showData()
+    # catas =  ["图像", "聊天社交","丽人母婴"]
+    cataname = "交通导航"
+    catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
+    # saveCataCommentsDelivery(cataname,catafilename)
+    showData(cataname)
+    # deleteAppDieveryWord("交通导航","老虎地图")
     # createDex()
-'''
-总app数量：15721
-获取评论的app数量：2622
-wordlocation数量：742323
-word数量：41362
-'''
