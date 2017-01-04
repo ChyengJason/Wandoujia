@@ -37,7 +37,12 @@ class DetailDescripe(object):
             return ""
 
         soup = BeautifulSoup(html,"html.parser")
-        soup = soup.select(".desc-info")[0]
+        soup = soup.select(".desc-info")
+        if soup == None or len(soup)<=0:
+            print("无详细描述")
+            return ""
+        soup = soup[0]
+
         details = soup.select(".con")[0]
         detail = ""
         for line in details:
@@ -83,7 +88,9 @@ def getAllCatasAppsDetailDescripe():
         getCataAppsDetailDescripe(cataname,catafilename)
 
 if __name__ == '__main__':
-    # "图像"
-    cataname = "图像"
-    catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
-    getCataAppsDetailDescripe(cataname,catafilename)
+    # "图像，丽人母婴，交通导航,效率办公，教育培训，新闻阅读，旅游出行,生活实用工具,生活服务，电话通讯,系统工具,美化手机，聊天社交，视频"
+    # cataname = "音乐"
+    # print(cataname)
+    # catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
+    # # getCataAppsDetailDescripe(cataname,catafilename)
+    getAllCatasAppsDetailDescripe()
