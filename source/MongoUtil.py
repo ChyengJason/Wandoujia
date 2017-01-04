@@ -14,6 +14,7 @@ def save(table, value):
         my_conn = MongoConn()
         check_connected(my_conn)
         my_conn.db[table].save(value)
+        my_conn.disconnect()
     except Exception:
         print(traceback.format_exc())
 
@@ -23,6 +24,7 @@ def insert(table, value):
         my_conn = MongoConn()
         check_connected(my_conn)
         my_conn.db[table].insert(value, continue_on_error=True)
+        my_conn.disconnect()
     except Exception:
         print(traceback.format_exc())
 
@@ -31,6 +33,7 @@ def update(table, conditions, value, s_upsert=False, s_multi=False):
         my_conn = MongoConn()
         check_connected(my_conn)
         my_conn.db[table].update(conditions, value, upsert=s_upsert, multi=s_multi)
+        my_conn.disconnect()
     except Exception:
        print(traceback.format_exc())
 
@@ -46,6 +49,7 @@ def upsert_mary(table, datas):
             _id=data['_id']
             bulk.find({'_id': _id}).upsert().update({'$set': data})
         bulk.execute()
+        my_conn.disconnect()
     except Exception:
         print(traceback.format_exc())
 
@@ -60,6 +64,7 @@ def upsert_one(table, data):
         else:
             data.pop('_id') #删除'_id'键
             my_conn.db[table].update(query, {'$set': data})
+        my_conn.disconnect()
     except Exception:
         print(traceback.format_exc())
 
@@ -68,7 +73,9 @@ def find_one(table, value):
     try:
         my_conn = MongoConn()
         check_connected(my_conn)
-        return my_conn.db[table].find_one(value)
+        result = my_conn.db[table].find_one(value)
+        my_conn.disconnect()
+        return result
     except Exception:
         print(traceback.format_exc())
 
@@ -77,7 +84,9 @@ def find(table, value):
     try:
         my_conn = MongoConn()
         check_connected(my_conn)
-        return my_conn.db[table].find(value)
+        result = my_conn.db[table].find(value)
+        my_conn.disconnect()
+        return result
     except Exception:
         print(traceback.format_exc())
 
@@ -95,7 +104,9 @@ def remove(table,value):
         if find(table,value).count()>=0:
             my_conn = MongoConn()
             check_connected(my_conn)
-            return my_conn.db[table].remove(value)
+            result = my_conn.db[table].remove(value)
+            my_conn.disconnect()
+            return result
     except Exception:
         print(traceback.format_exc())
 
@@ -105,6 +116,7 @@ def drop_db(table):
         my_conn = MongoConn()
         check_connected(my_conn)
         my_conn.db[table].drop()
+        my_conn.disconnect()
     except Exception:
         print(traceback.format_exc())
 
@@ -113,7 +125,9 @@ def select_colum(table, value, colum):
     try:
         my_conn = MongoConn()
         check_connected(my_conn)
-        return my_conn.db[table].find(value, {colum:1})
+        result = my_conn.db[table].find(value, {colum:1})
+        my_conn.disconnect()
+        return result
     except Exception:
         print(traceback.format_exc())
 
@@ -123,6 +137,7 @@ def create_index(table,colum,isUnique):
         my_conn = MongoConn()
         check_connected(my_conn)
         my_conn.db[table].ensure_index(colum,unique=isUnique)
+        my_conn.disconnect()
     except Exception:
         print(traceback.format_exc())
 
@@ -130,7 +145,9 @@ def distinct_count(table,distinct_tag,value=None):
     try:
         my_conn = MongoConn()
         check_connected(my_conn)
-        return my_conn.db[table].find(value).distinct(distinct_tag)
+        result = my_conn.db[table].find(value).distinct(distinct_tag)
+        my_conn.disconnect()
+        return result
     except Exception:
         print(traceback.format_exc())
 
@@ -138,6 +155,8 @@ def count(table):
     try:
         my_conn = MongoConn()
         check_connected(my_conn)
-        return my_conn.db[table].find().count()
+        ct = my_conn.db[table].find().count()
+        my_conn.disconnect()
+        return ct
     except Exception:
         print(traceback.format_exc())

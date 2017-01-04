@@ -186,10 +186,10 @@ def deleteAppDieveryWord(cataname,appname):
 if __name__ == '__main__':
     # saveAllcatasAppsToDB()
     # saveCommentsDelivery()
-    # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公","系统工具"]
-    cataname = "教育培训"
+    # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公","系统工具","教育培训"]
+    cataname = "新闻阅读"
     catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
-    # saveCataCommentsDelivery(cataname,catafilename)
+    saveCataCommentsDelivery(cataname,catafilename)
     showData(cataname)
-    # deleteAppDieveryWord("教育培训","233网校")
+    # deleteAppDieveryWord("新闻阅读","咪咕动漫")
     # createDex()

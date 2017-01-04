@@ -23,6 +23,7 @@ class MongoConn(Singleton):
     def __init__(self):
         # connect db
         try:
+            # self.conn = pymongo.MongoClient(MONGODB_CONFIG['host'], MONGODB_CONFIG['port'],maxPoolSize=100, waitQueueMultiple=100)
             self.conn = pymongo.MongoClient(MONGODB_CONFIG['host'], MONGODB_CONFIG['port'])
             self.db = self.conn[MONGODB_CONFIG['db_name']]  # connect db
             self.username=MONGODB_CONFIG['username']
@@ -35,3 +36,6 @@ class MongoConn(Singleton):
             print(traceback.format_exc())
             print('Connect Statics Database Fail.')
             sys.exit(1)
+
+    def disconnect(self):
+        self.conn.close()
