@@ -9,6 +9,9 @@ from source import MongoUtil
 from source.GetComment import AppInfo
 from source._const import const
 
+#将app信息存入数据库
+#将评论信息整理分类存入数据库
+
 #停用词
 stopWords = [word.strip() for word in open("stopword")]
 #标点符号
@@ -53,7 +56,7 @@ def saveAppToDB(appinfo):
     post = {}
     post["catagory"]=appinfo.cata
     post["appname"]=appinfo.name
-    post["installnum"]=appinfo.installnum
+    # post["installnum"]=appinfo.installnum
     post["url"]=appinfo.url
     post["descripe"]=appinfo.descripe
     post["apk"]=appinfo.apk
@@ -183,10 +186,10 @@ def deleteAppDieveryWord(cataname,appname):
 if __name__ == '__main__':
     # saveAllcatasAppsToDB()
     # saveCommentsDelivery()
-    # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公"]
-    cataname = "系统工具"
+    # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公","系统工具"]
+    cataname = "教育培训"
     catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
     # saveCataCommentsDelivery(cataname,catafilename)
     showData(cataname)
-    # deleteAppDieveryWord("系统工具","悦动浏览器")
+    # deleteAppDieveryWord("教育培训","233网校")
     # createDex()

@@ -22,6 +22,8 @@ const.WANDOUJIA_CATA_JSON_FILE = const.WANDOUJIA_DIR+"wandoujia_file.json"
 const.WANDOUJIA_APPS_JSON_FILE = const.WANDOUJIA_DIR+"apps_file.json"
 #豌豆荚app评论信息文件夹路径
 const.WANDOUJIA_APPS_COMMENT_DIR = const.WANDOUJIA_DIR+"apps_comments/"
+#豌豆加app详细的描述信息文件夹路径
+const.WANDOUJIA_APPS_DESC_DIR = const.WANDOUJIA_DIR+"apps_detail_descripe/"
 
 '''豌豆荚测试使用'''
 #豌豆荚旅游出行URL

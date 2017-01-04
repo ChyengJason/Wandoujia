@@ -79,6 +79,7 @@ class CataAppInfo(object):
             install_num = install_info.string
             apk = apk_info['title']
             comment = info_soup.select(".comment")[0].string
+            detail = info_soup.select(".comment")[0].string
             app_info = {}
             app_info.setdefault("url","")
             app_info["url"]=href
@@ -89,6 +90,9 @@ class CataAppInfo(object):
             app_info.setdefault("comment","")
             if comment is not None:
                 app_info["comment"]=comment.strip()
+            app_info.setdefault("detail","")
+            if detail is not None:
+                app_info["detail"]=comment.strip()
             self.cata_apps.setdefault(title,{})
             self.cata_apps[title] = app_info
 
@@ -104,6 +108,7 @@ class CataAppInfo(object):
         self.cata_apps_count = len(self.cata_apps)
 
 if __name__ == '__main__':
+
     cataInfo = CataInfo()
     cataInfo.load_json_file()
 

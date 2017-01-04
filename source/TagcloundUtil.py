@@ -13,8 +13,9 @@ def generateTagClound(filename,taglist):
     wordcloud = WordCloud(font_path="微软雅黑.ttf",background_color="gray", margin=5, width=1500, height=1000,ranks_only=True)\
         .generate_from_frequencies(taglist)
 
+    # plt.figure()
     plt.imshow(wordcloud)
     plt.axis("off")
     plt.show()
     print(d+"/"+filename)
-    wordcloud.to_file(filename)
+    wordcloud.to_file(filename+".jpg")
