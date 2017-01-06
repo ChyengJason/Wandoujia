@@ -69,7 +69,6 @@ class CataAppInfo(object):
     def parse_apps_content_html(self,html):
         soup = BeautifulSoup(html,"html.parser")
         info_list = soup.select(".app-desc")
-
         for info_soup in info_list:
             url_info = info_soup.select(".name")[0]
             install_info = info_soup.select(".install-count")[0]
@@ -107,11 +106,22 @@ class CataAppInfo(object):
         self.cata_apps = json.load(open(self.file_name))
         self.cata_apps_count = len(self.cata_apps)
 
+#生成一个信息文件info.json
+#包括日期、app总数
+def new_info_json_file(count):
+    date = time.strftime('%Y-%m-%d',time.localtime(time.time()))
+    count = count
+    info = {}
+    info["date"]=date
+    info["count"]=count
+    with open("../file/info.json", 'w') as f:
+            json.dump(info, f , ensure_ascii=False)
+
 if __name__ == '__main__':
 
     cataInfo = CataInfo()
     cataInfo.load_json_file()
-
+    count = 0
     for key in cataInfo.cata.keys():
         file_name = key+".json"
         if os.path.exists(file_name):
@@ -123,5 +133,6 @@ if __name__ == '__main__':
             # html = cataAppInfo.open_html()
             cataAppInfo.get_apps_page_num(html)
             cataAppInfo.get_apps_content_html()
-            cataAppInfo.parse_apps_content_html(html)
+            count +=cataAppInfo.cata_apps_count
             cataAppInfo.save_json_file()
+    new_info_json_file(count)

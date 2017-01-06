@@ -82,5 +82,5 @@ class Searcher:
         TagcloundUtil.generateTagClound(self.app["appname"],wordlist)
 
 if __name__ == '__main__':
-    searcher = Searcher("聊天社交","QQ")
+    searcher = Searcher("图像","Faceu激萌")
     searcher.newTagClound(searcher.tf_idfdict)

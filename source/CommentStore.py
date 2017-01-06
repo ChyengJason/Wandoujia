@@ -33,41 +33,6 @@ punctuations = [word.strip("\n") for word in open("punctuation")]
                         "location":location}
 '''
 
-def saveAllcatasAppsToDB():
-    catas = json.load(open(const.WANDOUJIA_CATA_JSON_FILE))
-    for cataname in catas:
-        cataname = cataname.strip()
-        catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
-        saveCataAppsToDB(cataname,catafilename)
-
-def saveCataAppsToDB(cataname,catafilename):
-    apps = json.load(open(catafilename))
-    print("总数量:"+str(len(apps)))
-    for app in apps.items():
-        name = app[0].strip().replace("/"," ")
-        install = app[1]["install"]
-        comment = app[1]["comment"]
-        url = app[1]["url"]
-        apk = app[1]["apk"]
-        appinfo = AppInfo(cataname,name,comment,install,url,apk)
-        saveAppToDB(appinfo)
-
-def saveAppToDB(appinfo):
-    post = {}
-    post["catagory"]=appinfo.cata
-    post["appname"]=appinfo.name
-    # post["installnum"]=appinfo.installnum
-    post["url"]=appinfo.url
-    post["descripe"]=appinfo.descripe
-    post["apk"]=appinfo.apk
-    post["date"]=time.strftime('%Y-%m-%d',time.localtime(time.time()))
-    # print(post)
-    if not MongoUtil.isExist("app_table",post):
-        MongoUtil.insert("app_table",post)
-
-    # cur = MongoUtil.find("app_table",{"catagory":appinfo.cata})
-    # print([i for i in cur])
-
 def deliveryWords(appinfo,filename):
     print(appinfo.name)
     contents = [line.strip() for line in open(filename)]
@@ -144,7 +109,7 @@ def saveCommentsDelivery():
     for cataname in catas:
         cataname = cataname.strip()
         catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
-        saveCataAppsToDB(cataname,catafilename)
+        saveCataCommentsDelivery(cataname,catafilename)
 
 def showData():
     print("总app数量："+str(MongoUtil.count("app_table")))
@@ -186,8 +151,9 @@ def deleteAppDieveryWord(cataname,appname):
 if __name__ == '__main__':
     # saveAllcatasAppsToDB()
     # saveCommentsDelivery()
-    # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公","系统工具","教育培训"]
-    cataname = "新闻阅读"
+    # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公","系统工具","教育培训","旅游出行"]
+    # cataname = "新闻阅读"
+    cataname="旅游出行"
     catafilename = const.WANDOUJIA_DIR+"apps_12_16/"+cataname+".json"
     saveCataCommentsDelivery(cataname,catafilename)
     showData(cataname)
