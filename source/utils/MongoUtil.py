@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import traceback
 
-from source.MongoConn import MongoConn
+from source.utils.MongoConn import MongoConn
 
 def check_connected(conn):
     #检查是否连接成功

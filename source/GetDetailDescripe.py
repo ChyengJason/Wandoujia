@@ -1,13 +1,12 @@
 import json
 import os
+import time
 
 import bs4
 import requests
-import time
 from bs4 import BeautifulSoup
 
-from source.AppInfo import AppInfo
-from source._const import const
+from source.utils._const import const
 
 
 class DetailDescripe(object):

@@ -1,8 +1,12 @@
 import json
+import os
+import re
 import time
-from source import MongoUtil
+
 from source.AppInfo import AppInfo
-from source._const import const
+from source.utils import MongoUtil
+from source.utils._const import const
+
 
 def saveAllcatasAppsToDB(filename):
     catas = json.load(open(const.WANDOUJIA_CATA_JSON_FILE))
@@ -33,11 +37,33 @@ def saveAppToDB(appinfo):
     post["apk"]=appinfo.apk
     post["date"]=time.strftime('%Y-%m-%d',time.localtime(time.time()))
     # print(post)
-    if not MongoUtil.isExist("app_table",{"catagory":appinfo.cata,"appname":appinfo.name}):
-        MongoUtil.insert("app_table",post)
+    if not MongoUtil.isExist("app_table", {"catagory":appinfo.cata, "appname":appinfo.name}):
+        MongoUtil.insert("app_table", post)
+    print(appinfo.cata + appinfo.name)
 
-    # cur = MongoUtil.find("app_table",{"catagory":appinfo.cata})
-    # print([i for i in cur])
+def scanDir(dir):
+    #找出类似"apps_2016_12_8"
+    apps_dir = []
+    for parent,dirnames,filenames in os.walk(dir):
+        for dirname in dirnames:
+            # print("parent is:" + parent)
+            if parent==dir and re.compile("apps_\d*_\d*_*\d").match(dirname):
+                apps_dir.append(dirname)
+    return apps_dir
 
 if __name__ == '__main__':
-    saveAllcatasAppsToDB("apps_2017_1_5")
+    app_dirs = scanDir(const.WANDOUJIA_DIR)
+    print(app_dirs)
+    for app_dir in app_dirs:
+        saveAllcatasAppsToDB(app_dir)
+
+    # saveAllcatasAppsToDB("apps_2017_1_5")
+
+'''
+视频 总数量:973
+生活实用工具 总数量:963
+聊天社交 总数量:978
+音乐 总数量:906
+图像 总数量:963
+教育培训 总数量:980
+'''

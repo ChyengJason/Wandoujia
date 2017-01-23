@@ -1,7 +1,8 @@
 import os
 import re
 
-from source._const import const
+from source.utils._const import const
+
 
 #app信息
 class AppInfo(object):

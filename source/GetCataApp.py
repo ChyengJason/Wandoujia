@@ -1,14 +1,13 @@
 import json
 import os
-import time
 import random
-
 import re
+import time
+
+import requests
 from bs4 import BeautifulSoup
 
 from source.GetCatagory import CataInfo
-from source._const import const
-import requests
 
 
 #获取所有app信息
@@ -42,7 +41,7 @@ class CataAppInfo(object):
     def get_apps_page_num(self,html):
         soup = BeautifulSoup(html,"html.parser")
         total_page_num = 0
-        # for child in soup.html.body:
+        # for child in soup.html.body:nb
         #     if type(child)==bs4.element.Tag:
         #         print(child
         page_list = soup.select(".page-item")
@@ -123,7 +122,7 @@ if __name__ == '__main__':
     cataInfo.load_json_file()
     count = 0
     for key in cataInfo.cata.keys():
-        file_name = key+".json"
+        file_name = "../file/"+key+".json"
         if os.path.exists(file_name):
             print(file_name)
         else:

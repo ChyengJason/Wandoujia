@@ -1,14 +1,14 @@
 import math
 
-from source import MongoUtil
-from source import TagcloundUtil
+from source.utils import MongoUtil, TagcloundUtil
+
 
 class Searcher:
     def __init__(self,appinfo):
         self.__init__(appinfo.cata,appinfo.name)
 
     def __init__(self,cataname,appname):
-        self.app = MongoUtil.find_one("app_table",{"catagory":cataname,"appname":appname})
+        self.app = MongoUtil.find_one("app_table", {"catagory":cataname, "appname":appname})
         print(self.app)
         self.worddict,self.wordcount= self.frequencyscore()
         if self.wordcount < 100:
@@ -31,9 +31,9 @@ class Searcher:
     def frequencyscore(self):
         worddict = {}
         wordcount = 0
-        cur = MongoUtil.find(self.app["catagory"],{"appid":self.app["_id"]})
+        cur = MongoUtil.find(self.app["catagory"], {"appid":self.app["_id"]})
         for locationinfo in cur:
-            wordinfo = MongoUtil.find_one("word_table",{"_id":locationinfo["wordid"]})
+            wordinfo = MongoUtil.find_one("word_table", {"_id":locationinfo["wordid"]})
             word = wordinfo["word"]
             worddict.setdefault(word,0)
             worddict[word]+=1
@@ -51,12 +51,12 @@ class Searcher:
             return
 
         #文档总数
-        docu_count = len( MongoUtil.distinct_count(self.app["catagory"],"appid",value=None))
+        docu_count = len(MongoUtil.distinct_count(self.app["catagory"], "appid", value=None))
         tf_idfdict = {}
         for item in self.worddict.items():
-            result = MongoUtil.find_one("word_table",{"word":item[0]})
+            result = MongoUtil.find_one("word_table", {"word":item[0]})
             wordid = result["_id"]
-            include_count = len(MongoUtil.distinct_count(self.app["catagory"],"appid",value={"wordid":wordid}))
+            include_count = len(MongoUtil.distinct_count(self.app["catagory"], "appid", value={"wordid":wordid}))
 
             docu_count-=1
             include_count-=1
@@ -79,7 +79,7 @@ class Searcher:
         wordlist = wordlist[0:limit]
         for word in wordlist:
             print(word)
-        TagcloundUtil.generateTagClound(self.app["appname"],wordlist)
+        TagcloundUtil.generateTagClound(self.app["appname"], wordlist)
 
 if __name__ == '__main__':
     searcher = Searcher("图像","Faceu激萌")
