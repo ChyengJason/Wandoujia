@@ -107,7 +107,15 @@ class CataAppInfo(object):
 
 #生成一个信息文件info.json
 #包括日期、app总数
-def new_info_json_file(count):
+def new_info_json_file():
+    count = 0
+    cataInfo = CataInfo()
+    cataInfo.load_json_file()
+    for key in cataInfo.cata.keys():
+        file_name = "../file/apps_2017_1_15/"+key+".json"
+        dic = json.load(open(file_name,"r"))
+        count+=len(dic)
+
     date = time.strftime('%Y-%m-%d',time.localtime(time.time()))
     count = count
     info = {}
@@ -120,7 +128,6 @@ if __name__ == '__main__':
 
     cataInfo = CataInfo()
     cataInfo.load_json_file()
-    count = 0
     for key in cataInfo.cata.keys():
         file_name = "../file/"+key+".json"
         if os.path.exists(file_name):
@@ -132,6 +139,5 @@ if __name__ == '__main__':
             # html = cataAppInfo.open_html()
             cataAppInfo.get_apps_page_num(html)
             cataAppInfo.get_apps_content_html()
-            count +=cataAppInfo.cata_apps_count
             cataAppInfo.save_json_file()
-    new_info_json_file(count)
+    new_info_json_file()

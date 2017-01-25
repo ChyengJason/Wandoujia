@@ -5,14 +5,15 @@ import time
 
 import jieba
 
+from source import MongoUtil
 from source.GetComment import AppInfo
-from source.utils import MongoUtil
-from source.utils._const import const
 
 #将app信息存入数据库
 #将评论信息整理分类存入数据库
 
 #停用词
+from source._const import const
+
 stopWords = [word.strip() for word in open("stopword")]
 #标点符号
 punctuations = [word.strip("\n") for word in open("punctuation")]
@@ -151,9 +152,10 @@ def deleteAppDieveryWord(cataname,appname):
 if __name__ == '__main__':
     # saveAllcatasAppsToDB()
     # saveCommentsDelivery()
-    # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公","系统工具","教育培训","旅游出行","新闻阅读",]
-    cataname = "生活实用工具"
-    # cataname="旅游出行"
+    # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公","系统工具","教育培训","旅游出行","新闻阅读","生活实用工具",
+    # "生活服务","电话通讯","美化手机"]
+    cataname = "视频"
+    # cataname=  购物 运动健康 金融理财 音乐
     catafilename = const.WANDOUJIA_DIR+"apps_2016_12_16/"+cataname+".json"
     saveCataCommentsDelivery(cataname,catafilename)
     showData(cataname)

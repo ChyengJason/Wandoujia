@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from source.AppInfo import AppInfo
-from source.utils._const import const
+from source._const import const
 
 #忽略下载评论的app名字
 ignoreAppName = [""]

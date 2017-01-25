@@ -1,6 +1,7 @@
 import math
 
-from source.utils import MongoUtil, TagcloundUtil
+from source import MongoUtil
+from source import TagcloundUtil
 
 
 class Searcher:

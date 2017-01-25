@@ -3,9 +3,10 @@ import os
 import re
 import time
 
+
+from source import MongoUtil
 from source.AppInfo import AppInfo
-from source.utils import MongoUtil
-from source.utils._const import const
+from source._const import const
 
 
 def saveAllcatasAppsToDB(filename):
@@ -57,7 +58,7 @@ if __name__ == '__main__':
     for app_dir in app_dirs:
         saveAllcatasAppsToDB(app_dir)
 
-    # saveAllcatasAppsToDB("apps_2017_1_5")
+    # saveAllcatasAppsToDB("apps_2017_1_15")
 
 '''
 视频 总数量:973

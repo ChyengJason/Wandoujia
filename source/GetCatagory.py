@@ -4,7 +4,7 @@ import bs4
 import requests
 from bs4 import BeautifulSoup
 
-from source.utils._const import const
+from source._const import const
 
 
 # 获取所有目录信息
