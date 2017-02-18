@@ -153,9 +153,9 @@ if __name__ == '__main__':
     # saveAllcatasAppsToDB()
     # saveCommentsDelivery()
     # catas =  ["图像", "聊天社交","丽人母婴","交通导航","效率办公","系统工具","教育培训","旅游出行","新闻阅读","生活实用工具",
-    # "生活服务","电话通讯","美化手机"]
-    cataname = "视频"
-    # cataname=  购物 运动健康 金融理财 音乐
+    # "生活服务","电话通讯","美化手机","视频","购物","运动健康"]
+    cataname = "金融理财"
+    # cataname= 音乐
     catafilename = const.WANDOUJIA_DIR+"apps_2016_12_16/"+cataname+".json"
     saveCataCommentsDelivery(cataname,catafilename)
     showData(cataname)

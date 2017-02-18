@@ -249,7 +249,7 @@ shuffle(neg)
 
 #信息量丰富的词和双词搭配
 word_scores = create_word_bigram_scores(pos,neg)
-best_words = find_best_words(word_scores, 100) #选择信息量最丰富的1500个的特征
+best_words = find_best_words(word_scores, 100) #选择信息量最丰富的100个的特征
 posFeatures = pos_features(pos,best_word_features)
 negFeatures = neg_features(neg,best_word_features)
 
@@ -266,24 +266,24 @@ for item in test:
 
 # build_model(BernoulliNB(),train)
 #朴素贝叶斯
-# print('BernoulliNB`s accuracy is %f' %score(BernoulliNB(),train,test_list,test_result_list))
+print('BernoulliNB`s accuracy is %f' %score(BernoulliNB(),train,test_list,test_result_list))
 #分布数据的贝叶斯算法
-# print('MultinomiaNB`s accuracy is %f' %score(MultinomialNB(),train,test_list,test_result_list))
+print('MultinomiaNB`s accuracy is %f' %score(MultinomialNB(),train,test_list,test_result_list))
 #逻辑回归算法
-# print('LogisticRegression`s accuracy is %f' %score(LogisticRegression(),train,test_list,test_result_list))
+print('LogisticRegression`s accuracy is %f' %score(LogisticRegression(),train,test_list,test_result_list))
 #svc算法
-# print('SVC`s accuracy is %f' %score(SVC(),train,test_list,test_result_list))
+print('SVC`s accuracy is %f' %score(SVC(),train,test_list,test_result_list))
 #线性svc
-# print('LinearSVC`s accuracy is %f' %score(LinearSVC(),train,test_list,test_result_list))
-# print('NuSVC`s accuracy is %f' %score(NuSVC(),train,test_list,test_result_list))
+print('LinearSVC`s accuracy is %f' %score(LinearSVC(),train,test_list,test_result_list))
+print('NuSVC`s accuracy is %f' %score(NuSVC(),train,test_list,test_result_list))
 
-def predict(clf,comment):
-    # feat = []
-    comment_words = delivery_word(comment)
-    pred = clf.prob_classify(best_word_features(comment_words))
-    return pred
-
-model = load_model()
-comment = "很不错的软件，旧手机都没问题"
-pred = predict(model,comment)
-print("积极："+str(pred.prob('pos')) + "  消极："+ + str(pred.prob('neg')) + '\n')
+# def predict(clf,comment):
+#     # feat = []
+#     comment_words = delivery_word(comment)
+#     pred = clf.prob_classify(best_word_features(comment_words))
+#     return pred
+#
+# model = load_model()
+# comment = "很不错的软件，旧手机都没问题"
+# pred = predict(model,comment)
+# print("积极："+str(pred.prob('pos')) + "  消极：" + str(pred.prob('neg')) + '\n')
