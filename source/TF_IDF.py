@@ -9,12 +9,16 @@ class Searcher:
         self.__init__(appinfo.cata,appinfo.name)
 
     def __init__(self,cataname,appname):
+        self.tf_idfdict = None
         self.app = MongoUtil.find_one("app_table", {"catagory":cataname, "appname":appname})
+        if self.app is None:
+            print("该app未存储在数据库，可能原因：查询不准确，未存储入数据库，数据未更新")
         print(self.app)
         self.worddict,self.wordcount= self.frequencyscore()
         if self.wordcount < 100:
             print("该app的评论数量过少，获取关键词将会不准确")
             return
+        print("评论总数是："+str(self.wordcount))
         self.tf_idfdict = self.tf_idf()
 
     #归一化处理
@@ -53,16 +57,22 @@ class Searcher:
 
         #文档总数
         docu_count = len(MongoUtil.distinct_count(self.app["catagory"], "appid", value=None))
+        #减去它本身
+        docu_count-=1
+
         tf_idfdict = {}
         for item in self.worddict.items():
             result = MongoUtil.find_one("word_table", {"word":item[0]})
             wordid = result["_id"]
             include_count = len(MongoUtil.distinct_count(self.app["catagory"], "appid", value={"wordid":wordid}))
-
-            docu_count-=1
+            #减去它本身
             include_count-=1
 
             # print(item[0]+"->"+str(item[1])+"  包含的总文档数"+str(include_count))
+            # print(str(docu_count) + " "+str(include_count))
+            if docu_count <= 0:
+                docu_count = 0
+
             wordidf = float( math.log(docu_count / (include_count+1)))
             wordtf = float( item[1]/self.wordcount)
             tf_idfdict[item[0]] = wordtf * wordidf
@@ -83,5 +93,6 @@ class Searcher:
         TagcloundUtil.generateTagClound(self.app["appname"], wordlist)
 
 if __name__ == '__main__':
-    searcher = Searcher("图像","Faceu激萌")
-    searcher.newTagClound(searcher.tf_idfdict)
+    searcher = Searcher("效率办公","WPS便签")
+    if searcher.tf_idfdict is not None:
+        searcher.newTagClound(searcher.tf_idfdict)

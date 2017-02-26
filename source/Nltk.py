@@ -1,8 +1,9 @@
 import itertools
+import json
 import pickle
 from random import shuffle
-
 import jieba
+import time
 from nltk.collocations import BigramCollocationFinder
 from nltk.metrics import BigramAssocMeasures
 from nltk.classify.scikitlearn import SklearnClassifier
@@ -11,8 +12,23 @@ from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
+from source import MongoUtil
+from source._const import const
 
-N = 100 #从语料中挑选N个文本量最丰富的词，特征维度，这个需要不断的测试，找出合适的维度
+N = 1000 #从语料中挑选N个文本量最丰富的词，特征维度，这个需要不断的测试，找出合适的维度
+
+emotion_threshold = 0.45 # 情感阀值，判断是积极还是消极情感使用，可调整
+useful_comment_threshold = 100 # 当总的有效评论数量大于此阀值时，好评率才有效
+
+'''
+    emotion_comment {
+      appid : appid,
+      comment_count: 100,     评论总数
+      pos_count:30,           积极评论数
+      neg_count:30,           消极评论数
+      applause_rate, 30/100   好评率
+    }
+'''
 
 ''' 使用：添加积极文本到'''
 
@@ -198,14 +214,17 @@ def score(classifier,train,testSet,tag_test):
 def test_and_store_model():
     #信息量丰富的词和双词搭配
     pos,neg = load_data()
+    print(len(pos))
+    print(len(neg))
     word_scores = create_word_bigram_scores(pos,neg)
     best_words = find_best_words(word_scores, N) #选择信息量最丰富的N个的特征
+    print(best_words)
     posFeatures = pos_features(pos,best_word_features,best_words)
     negFeatures = neg_features(neg,best_word_features,best_words)
 
-    train = posFeatures[15:]+negFeatures[15:] # 训练集合
-    devtest = posFeatures[10:15]+negFeatures[10:15] #
-    test = posFeatures[:10]+negFeatures[:10] #测试集
+    train = posFeatures[50:500]+negFeatures[50:500] # 训练集合
+    # devtest = posFeatures[10:15]+negFeatures[10:15] #
+    test = posFeatures[:50]+negFeatures[:50] #测试集
 
     test_list = []
     test_result_list = []
@@ -241,14 +260,129 @@ def load_model():
     best_words = pickle.load(open('../file/train/best_words.pkl','rb'))
     return classifier,best_words
 
-def predict(clf,comment,best_words):
+def predict(clf,comment_words,best_words):
     # feat = []
-    comment_words = delivery_word(comment)
     pred = clf.prob_classify(best_word_features(comment_words,best_words))
     return pred
 
 def test_result():
     model,best_words = load_model()
     comment = "很不错的软件，旧手机都没问题"
-    pred = predict(model,comment,best_words)
+    comment_words = delivery_word(comment)
+    pred = predict(model,comment_words,best_words)
     print("积极："+str(pred.prob('pos')) + "  消极：" + str(pred.prob('neg')) + '\n')
+
+def get_app_each_comment(appname,cataname =""):
+    if cataname == "":
+        app = MongoUtil.find_one("app_table", {"appname":appname})
+    else:
+        app = MongoUtil.find_one("app_table", {"catagory":cataname, "appname":appname})
+    print(app)
+    if app is None:
+        return
+    app_id = app["_id"]
+    app_cata = app["catagory"]
+    results = MongoUtil.find(app_cata,{"appid":app_id})
+    comments = {}
+
+    for item in results:
+        word_id = item["wordid"]
+        location = item["location"]
+        word = MongoUtil.find_one("word_table",{"_id":word_id})["word"]
+        comments.setdefault(location,[])
+        comments[location].append(word)
+    return comments
+
+def test_app(appname,cataname =""):
+    model,best_words = load_model()
+    comments = get_app_each_comment(appname,cataname=cataname)
+    for key in comments.keys():
+        comment_words = comments[key]
+        pred = predict(model,comment_words,best_words)
+        print(str(key)+"  "+str(comment_words)+" -> "+"积极："+str(pred.prob('pos')) + "  消极：" + str(pred.prob('neg')))
+
+# 其他情感评论：0
+# 积极评论：1
+# 消极评论: 2
+# (积极参数-消极参数) >= 情感阀值，判断为积极
+# (消极参数-积极参数) >= 情感阀值，判断为消极
+def judgeCommentEmotion(pos_arg,neg_arg):
+    if pos_arg > neg_arg and pos_arg - neg_arg >= emotion_threshold :
+        return 1
+    if neg_arg > pos_arg and neg_arg - pos_arg >- emotion_threshold :
+        return 2
+    return 0
+
+#将情感数据存入数据库
+def savetoDB(appid,comment_count,pos_count,neg_count):
+
+    if comment_count < useful_comment_threshold:
+        print("总的有效评论数量："+str(comment_count)+" 好评数量："+str(pos_count)+" 差评数量："+str(neg_count))
+        print("该app的评论数小于100，无参考意义")
+        return
+
+    applause_rate = (float)(pos_count / comment_count)
+
+    print("总的有效评论数量："+str(comment_count)+" 好评数量："+str(pos_count)+" 差评数量："+str(neg_count)+" 好评率："+str(applause_rate))
+
+    MongoUtil.save("emotion_comment",{ "appid":appid,
+                                       "comment_count":comment_count,
+                                       "pos_count":pos_count,
+                                       "neg_count":neg_count,
+                                       "applause_rate":applause_rate
+                                      })
+
+#存储所有的app评论数据到数据库
+def saveCommentEmotionData(model,best_words,app):
+
+    time.sleep(1)
+    appid = app["_id"]
+    appname = app["appname"]
+    cataname = app["catagory"]
+
+    if MongoUtil.isExist("emotion_comment",{"appid":appid}):
+        print(appname+"已经存在了")
+        return
+
+    results = MongoUtil.find(cataname,{"appid":appid})
+    print(cataname,appname)
+    comments = {}
+    pos_count = 0
+    neg_count = 0
+
+    for item in results:
+        word_id = item["wordid"]
+        location = item["location"]
+        word = MongoUtil.find_one("word_table",{"_id":word_id})["word"]
+        comments.setdefault(location,[])
+        comments[location].append(word)
+
+    for key in comments.keys():
+        comment_words = comments[key]
+        pred = predict(model,comment_words,best_words)
+        emotion = judgeCommentEmotion(pred.prob('pos'),pred.prob('neg'))
+        if emotion == 1 : pos_count += 1
+        if emotion == 2 : neg_count += 1
+
+    savetoDB(appid,len(comments),pos_count,neg_count)
+
+#存储所有的app评论数据到数据库
+def saveAllComentEmotionData():
+    model,best_words = load_model()
+    catas = json.load(open(const.WANDOUJIA_CATA_JSON_FILE))
+    for cataname in catas:
+        print(cataname)
+        apps = MongoUtil.find("app_table",{})
+        for app in apps:
+            saveCommentEmotionData(model,best_words,app)
+
+# test_and_store_model()
+
+saveAllComentEmotionData()
+
+# app = MongoUtil.find_one("app_table",{"appname":"小红书"})
+# model,best_words = load_model()
+# getCommentEmotionData(model,best_words,app)
+
+# test_app("QQ",cataname="聊天社交")
+

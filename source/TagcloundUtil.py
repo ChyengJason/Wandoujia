@@ -17,5 +17,5 @@ def generateTagClound(filename,taglist):
     plt.imshow(wordcloud)
     plt.axis("off")
     plt.show()
-    print(d+"/"+filename)
+    print(d+"/file/figures/"+filename)
     wordcloud.to_file(filename+".jpg")

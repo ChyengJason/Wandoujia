@@ -53,12 +53,12 @@ def scanDir(dir):
     return apps_dir
 
 if __name__ == '__main__':
-    app_dirs = scanDir(const.WANDOUJIA_DIR)
-    print(app_dirs)
-    for app_dir in app_dirs:
-        saveAllcatasAppsToDB(app_dir)
+    # app_dirs = scanDir(const.WANDOUJIA_DIR)
+    # print(app_dirs)
+    # for app_dir in app_dirs:
+    #     saveAllcatasAppsToDB(app_dir)
 
-    # saveAllcatasAppsToDB("apps_2017_1_15")
+    saveAllcatasAppsToDB("apps_2017_2_18")
 
 '''
 视频 总数量:973
