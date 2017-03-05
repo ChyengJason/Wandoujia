@@ -13,12 +13,13 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 from source import MongoUtil
+from source import WilsonScoreUtil
 from source._const import const
 
-N = 1000 #从语料中挑选N个文本量最丰富的词，特征维度，这个需要不断的测试，找出合适的维度
+N = 2000 #从语料中挑选N个文本量最丰富的词，特征维度，这个需要不断的测试，找出合适的维度
 
 emotion_threshold = 0.45 # 情感阀值，判断是积极还是消极情感使用，可调整
-useful_comment_threshold = 100 # 当总的有效评论数量大于此阀值时，好评率才有效
+useful_comment_threshold = 20 # 当总的有效评论数量大于此阀值时，好评率才有效
 
 '''
     emotion_comment {
@@ -27,6 +28,9 @@ useful_comment_threshold = 100 # 当总的有效评论数量大于此阀值时�
       pos_count:30,           积极评论数
       neg_count:30,           消极评论数
       applause_rate, 30/100   好评率
+
+      wilson_top_score,       威尔逊上限
+      wilson_lower_score,    威尔逊下限
     }
 '''
 
@@ -267,7 +271,7 @@ def predict(clf,comment_words,best_words):
 
 def test_result():
     model,best_words = load_model()
-    comment = "很不错的软件，旧手机都没问题"
+    comment = "神来之笔"
     comment_words = delivery_word(comment)
     pred = predict(model,comment_words,best_words)
     print("积极："+str(pred.prob('pos')) + "  消极：" + str(pred.prob('neg')) + '\n')
@@ -319,17 +323,20 @@ def savetoDB(appid,comment_count,pos_count,neg_count):
     if comment_count < useful_comment_threshold:
         print("总的有效评论数量："+str(comment_count)+" 好评数量："+str(pos_count)+" 差评数量："+str(neg_count))
         print("该app的评论数小于100，无参考意义")
+        print()
         return
 
     applause_rate = (float)(pos_count / comment_count)
-
+    top_score,lower_score = WilsonScoreUtil.confidence(pos_count,neg_count)
     print("总的有效评论数量："+str(comment_count)+" 好评数量："+str(pos_count)+" 差评数量："+str(neg_count)+" 好评率："+str(applause_rate))
-
+    print()
     MongoUtil.save("emotion_comment",{ "appid":appid,
                                        "comment_count":comment_count,
                                        "pos_count":pos_count,
                                        "neg_count":neg_count,
-                                       "applause_rate":applause_rate
+                                       "applause_rate":applause_rate,
+                                       "wilson_top_score" :top_score,
+                                       "wilson_lower_score":lower_score
                                       })
 
 #存储所有的app评论数据到数据库
@@ -342,6 +349,7 @@ def saveCommentEmotionData(model,best_words,app):
 
     if MongoUtil.isExist("emotion_comment",{"appid":appid}):
         print(appname+"已经存在了")
+        print()
         return
 
     results = MongoUtil.find(cataname,{"appid":appid})
@@ -368,12 +376,25 @@ def saveCommentEmotionData(model,best_words,app):
 
 #存储所有的app评论数据到数据库
 def saveAllComentEmotionData():
+
+    begin = False
     model,best_words = load_model()
     catas = json.load(open(const.WANDOUJIA_CATA_JSON_FILE))
     for cataname in catas:
-        print(cataname)
-        apps = MongoUtil.find("app_table",{})
+    # cataname = "运动健康"
+    # "视频" "生活服务" "美化手机" "旅游出行" "聊天社交" "丽人母婴" "金融理财" "系统工具"
+    # “新闻阅读” "教育培训" "交通导航" "购物" "电话通讯" "图像" "生活实用工具" "音乐"
+
+    # print(cataname)
+        apps = MongoUtil.find("app_table",{"catagory":cataname})
+        code = 0
         for app in apps:
+            code+=1
+        # if app["appname"] == "ibody运动":
+        #     begin = True
+
+        # if begin:
+            print(code,end=" ")
             saveCommentEmotionData(model,best_words,app)
 
 # test_and_store_model()
@@ -384,5 +405,6 @@ saveAllComentEmotionData()
 # model,best_words = load_model()
 # getCommentEmotionData(model,best_words,app)
 
-# test_app("QQ",cataname="聊天社交")
+# test_app("UP OPEN",cataname="生活实用工具")
 
+# test_result()

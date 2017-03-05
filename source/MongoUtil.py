@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import traceback
 
+import pymongo
+from bson import Code
+
 from source.MongoConn import MongoConn
 
 def check_connected(conn):
@@ -47,7 +50,11 @@ def upsert_mary(table, datas):
         bulk = my_conn.db[table].initialize_ordered_bulk_op()
         for data in datas:
             _id=data['_id']
-            bulk.find({'_id': _id}).upsert().update({'$set': data})
+            tem = {}
+            for d in data.items():
+                if d[0] != "_id" :
+                    tem[d[0]] = d[1]
+            bulk.find({'_id': _id}).upsert().update({'$set': tem})
         bulk.execute()
         my_conn.disconnect()
     except Exception:
@@ -158,5 +165,63 @@ def count(table):
         ct = my_conn.db[table].find().count()
         my_conn.disconnect()
         return ct
+    except Exception:
+        print(traceback.format_exc())
+
+
+def sort(table,condition,order,limit=0):
+    # order 1：正序 -1：逆序
+    try:
+        my_conn = MongoConn()
+        check_connected(my_conn)
+        if order != 1:
+            order = pymongo.DESCENDING
+        else:
+            order = pymongo.ASCENDING
+
+        if limit <= 0:
+            ct = my_conn.db[table].find().sort(condition,order)
+        else:
+            ct = my_conn.db[table].find().sort(condition,order).limit(limit)
+        my_conn.disconnect()
+        return ct
+    except Exception:
+        print(traceback.format_exc())
+
+def capacity_find_most(limit = 10):
+    try:
+        table = "capacity_table"
+        my_conn = MongoConn()
+        check_connected(my_conn)
+        mapper = Code('''
+            function()
+            {
+                emit( this.appid,{ appid: this.appid, capacity_num:this.capacity_num, date:this.date} );
+            }
+        ''')
+
+        reduce = Code('''
+            function(key,values)
+            {
+                var max_capacity = 0;
+                var max_date = 0;
+                var max_appid = 0;
+                for(var i=0; i<values.length; i++)
+                {
+                    if(values[i].capacity_num > max_capacity)
+                    {
+                        max_capacity = values[i].capacity_num;
+                        max_date = values[i].date;
+                        max_appid = values[i].appid;
+                    }
+                }
+                return ({appid:max_appid,capacity_num:max_capacity,date:max_date})
+            }
+        ''')
+
+        ct = my_conn.db[table].map_reduce(mapper,reduce,"result")
+        result = ct.find().sort("value.capacity_num",pymongo.DESCENDING).limit(limit)
+        my_conn.disconnect()
+        return result
     except Exception:
         print(traceback.format_exc())

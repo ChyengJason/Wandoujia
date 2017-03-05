@@ -2,47 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4b7ebe-3195-40f9-9ae6-5ce1d09852ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/FigureUtil.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/丽人母婴.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/交通导航.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/图像.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/效率办公.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/教育培训.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/新闻阅读.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/旅游出行.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/生活实用工具.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/生活服务.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/电话通讯.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/系统工具.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/美化手机.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/聊天社交.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/视频.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/购物.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/运动健康.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/金融理财.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file/apps_11_24/音乐.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/utils/FigureUtil.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/res/Mandarin.dat" afterPath="$PROJECT_DIR$/source/Mandarin.dat" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/res/Roboto-Black.ttf" afterPath="$PROJECT_DIR$/source/Roboto-Black.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/res/punctuation" afterPath="$PROJECT_DIR$/source/punctuation" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/res/stopword" afterPath="$PROJECT_DIR$/source/stopword" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/res/微软雅黑.ttf" afterPath="$PROJECT_DIR$/source/微软雅黑.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/utils/MongoConn.py" afterPath="$PROJECT_DIR$/source/MongoConn.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/utils/MongoUtil.py" afterPath="$PROJECT_DIR$/source/MongoUtil.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/utils/PinYinUtil.py" afterPath="$PROJECT_DIR$/source/PinYinUtil.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/utils/TagcloundUtil.py" afterPath="$PROJECT_DIR$/source/TagcloundUtil.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/source/utils/_const.py" afterPath="$PROJECT_DIR$/source/_const.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/Init.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/WilsonScoreUtil.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/test.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file/wandoujia_file.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file/apps_comments/交通导航/春秋航空" afterPath="$PROJECT_DIR$/file/apps_comments/交通导航/春秋航空" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/AppInfo.py" afterPath="$PROJECT_DIR$/source/AppInfo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/AppStore.py" afterPath="$PROJECT_DIR$/source/AppStore.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Capacity.py" afterPath="$PROJECT_DIR$/source/Capacity.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/CapacityStore.py" afterPath="$PROJECT_DIR$/source/CapacityStore.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/CommentStore.py" afterPath="$PROJECT_DIR$/source/CommentStore.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/GetCataApp.py" afterPath="$PROJECT_DIR$/source/GetCataApp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/GetCatagory.py" afterPath="$PROJECT_DIR$/source/GetCatagory.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/GetComment.py" afterPath="$PROJECT_DIR$/source/GetComment.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/GetDetailDescripe.py" afterPath="$PROJECT_DIR$/source/GetDetailDescripe.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/TF_IDF.py" afterPath="$PROJECT_DIR$/source/TF_IDF.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/MongoUtil.py" afterPath="$PROJECT_DIR$/source/MongoUtil.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Nltk.py" afterPath="$PROJECT_DIR$/source/Nltk.py" />
     </list>
     <ignored path="Wandoujia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,24 +32,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Capacity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/Capacity.py">
+      <file leaf-file-name="MongoUtil.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/MongoUtil.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="206" column="21" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+              <caret line="222" column="26" selection-start-line="222" selection-start-column="26" selection-end-line="222" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FigureUtil.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/FigureUtil.py">
+      <file leaf-file-name="Init.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Init.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.622">
+              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+              <folding>
+                <element signature="e#156#170#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,88 +58,8 @@
         <entry file="file://$PROJECT_DIR$/source/AppStore.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetCataApp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/GetCataApp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="142" column="24" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetCatagory.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/GetCatagory.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="29" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetComment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/GetComment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="98" selection-end-column="49" />
+              <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetDetailDescripe.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/GetDetailDescripe.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_nltk.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/test_nltk.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="13.414634">
-              <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="287" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppInfo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/AppInfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentStore.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/CommentStore.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -204,18 +93,14 @@
         <option value="$PROJECT_DIR$/source/stop_word" />
         <option value="$PROJECT_DIR$/source/CommentDeal.py" />
         <option value="$PROJECT_DIR$/source/stopword" />
-        <option value="$PROJECT_DIR$/source/punctuation" />
         <option value="$PROJECT_DIR$/source/zgjds" />
         <option value="$PROJECT_DIR$/source/GetProblems.py" />
         <option value="$PROJECT_DIR$/source/male" />
         <option value="$PROJECT_DIR$/source/female" />
-        <option value="$PROJECT_DIR$/source/test_nltk.py" />
-        <option value="$PROJECT_DIR$/source/TagcloundUtil.py" />
         <option value="$PROJECT_DIR$/source/AppInfo.py" />
         <option value="$PROJECT_DIR$/source/GetComment.py" />
         <option value="$PROJECT_DIR$/source/_const.py" />
         <option value="$PROJECT_DIR$/source/GetDetailDescripe.py" />
-        <option value="$PROJECT_DIR$/source/MongoUtil.py" />
         <option value="$PROJECT_DIR$/source/testMongo.py" />
         <option value="$PROJECT_DIR$/source/MongoConn.py" />
         <option value="$PROJECT_DIR$/source/Store.py" />
@@ -225,24 +110,34 @@
         <option value="$PROJECT_DIR$/source/DownloadingCapacity.py" />
         <option value="$PROJECT_DIR$/source/test_2.py" />
         <option value="$PROJECT_DIR$/source/PinYinUtil.py" />
-        <option value="$PROJECT_DIR$/source/test.py" />
         <option value="$PROJECT_DIR$/source/utils/FigureUtil.py" />
-        <option value="$PROJECT_DIR$/source/TF_IDF.py" />
         <option value="$PROJECT_DIR$/source/GetCataApp.py" />
-        <option value="$PROJECT_DIR$/source/CapacityStore.py" />
         <option value="$PROJECT_DIR$/source/FigureUtil.py" />
         <option value="$PROJECT_DIR$/source/Capacity.py" />
+        <option value="$PROJECT_DIR$/source/NlTK.py" />
+        <option value="$PROJECT_DIR$/source/test_nltk.py" />
+        <option value="$PROJECT_DIR$/source/punctuation" />
         <option value="$PROJECT_DIR$/source/AppStore.py" />
         <option value="$PROJECT_DIR$/source/CommentStore.py" />
+        <option value="$PROJECT_DIR$/source/TagcloundUtil.py" />
+        <option value="$PROJECT_DIR$/source/TF_IDF.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/file/read" />
+        <option value="$PROJECT_DIR$/source/WilsonScoreUtil.py" />
+        <option value="$PROJECT_DIR$/source/Nltk.py" />
+        <option value="$PROJECT_DIR$/source/CapacityStore.py" />
+        <option value="$PROJECT_DIR$/source/test.py" />
+        <option value="$PROJECT_DIR$/source/MongoUtil.py" />
+        <option value="$PROJECT_DIR$/source/Init.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1366" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -267,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -316,7 +212,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,18 +221,19 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/file/figures" />
       <recent name="$PROJECT_DIR$/source" />
       <recent name="$PROJECT_DIR$/source/utils" />
       <recent name="$PROJECT_DIR$/source/res" />
       <recent name="$PROJECT_DIR$/file" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.Capacity">
-    <configuration default="false" name="Capacity" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Init">
+    <configuration default="false" name="Nltk" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -349,7 +245,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Wandoujia" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/Capacity.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/Nltk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TF_IDF" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Wandoujia" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/TF_IDF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -371,7 +284,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="AppStore" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -383,12 +296,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Wandoujia" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/AppStore.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="CommentStore" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Init" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -400,24 +313,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Wandoujia" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/CommentStore.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CapacityStore" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Wandoujia" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/CapacityStore.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/Init.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -545,19 +441,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Capacity" />
-      <item index="1" class="java.lang.String" itemvalue="Python.GetCataApp" />
-      <item index="2" class="java.lang.String" itemvalue="Python.AppStore" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CommentStore" />
-      <item index="4" class="java.lang.String" itemvalue="Python.CapacityStore" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Nltk" />
+      <item index="1" class="java.lang.String" itemvalue="Python.TF_IDF" />
+      <item index="2" class="java.lang.String" itemvalue="Python.GetCataApp" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Init" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CommentStore" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Capacity" />
-        <item index="2" class="java.lang.String" itemvalue="Python.CapacityStore" />
-        <item index="3" class="java.lang.String" itemvalue="Python.AppStore" />
-        <item index="4" class="java.lang.String" itemvalue="Python.GetCataApp" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Init" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Nltk" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GetCataApp" />
+        <item index="4" class="java.lang.String" itemvalue="Python.TF_IDF" />
       </list>
     </recent_temporary>
   </component>
@@ -620,7 +516,25 @@
       <option name="project" value="LOCAL" />
       <updated>1485149088360</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="加入下载量-增长速度计算">
+      <created>1485319450492</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1485319450492</updated>
+    </task>
+    <task id="LOCAL-00010" summary="nltk情感分析">
+      <created>1487409438847</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1487409438847</updated>
+    </task>
+    <task id="LOCAL-00011" summary="nltk情感分析完善">
+      <created>1488115442200</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1488115442200</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -633,24 +547,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.50596124" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49403876" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947367" sideWeight="0.49403876" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49701938" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38235295" sideWeight="0.48509687" order="12" side_tool="false" content_ui="tabs" x="390" y="24" width="585" height="736" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17956656" sideWeight="0.48509687" order="12" side_tool="false" content_ui="tabs" x="390" y="24" width="585" height="736" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5123839" sideWeight="0.49403876" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25707898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21087928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55263156" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -677,120 +591,17 @@
     <MESSAGE value="mongo工具改善" />
     <MESSAGE value="1.手动添加训练集&#10;2.完善nltk&#10;3.完成增量情况存储与处理&#10;4.相似度" />
     <MESSAGE value="加入下载量-增长速度计算" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入下载量-增长速度计算" />
+    <MESSAGE value="nltk情感分析" />
+    <MESSAGE value="nltk情感分析完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="nltk情感分析完善" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/GetCatagory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/GetCataApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_const.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.14988814">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/pytagcloud/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14555256">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/PIL/ImageFont.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.4/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="719" column="0" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-1247971765/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029220778">
-          <caret line="4914" column="23" selection-start-line="4914" selection-start-column="23" selection-end-line="4914" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/pymongo/cursor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3313783">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/pymongo/collection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3313783">
-          <caret line="1144" column="0" selection-start-line="1144" selection-start-column="0" selection-end-line="1144" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/pymongo/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.973607">
-          <caret line="388" column="0" selection-start-line="388" selection-start-column="0" selection-end-line="388" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.4/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33168316">
-          <caret line="242" column="4" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SocialSciences/GetProblems.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7780822">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/wordcloud/wordcloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.61676645">
-          <caret line="505" column="8" selection-start-line="505" selection-start-column="8" selection-end-line="505" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.4/dist-packages/nltk/probability.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3149848">
-          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.4/dist-packages/nltk/metrics/association.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8287462">
@@ -849,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33255813">
           <caret line="977" column="6" selection-start-line="977" selection-start-column="6" selection-end-line="977" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,23 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33255813">
           <caret line="875" column="0" selection-start-line="875" selection-start-column="0" selection-end-line="875" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/stopword">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41395348">
-          <caret line="1594" column="2" selection-start-line="1594" selection-start-column="2" selection-end-line="1594" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/punctuation">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16744186">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,15 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="322" selection-start-line="3" selection-start-column="322" selection-end-line="3" selection-end-column="322" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/TagcloundUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60674155">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,15 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15730338">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Mandarin.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34082398">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42696628">
           <caret line="19" column="30" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,9 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4362745">
           <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
-          <folding>
-            <element signature="e#25#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -939,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.047244094">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,25 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/TF_IDF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64705884">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/MongoUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="13" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,17 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="1019" column="8" selection-start-line="1019" selection-start-column="8" selection-end-line="1019" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/CapacityStore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.67374">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,27 +730,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.46078432">
           <caret line="784" column="4" selection-start-line="784" selection-start-column="4" selection-end-line="784" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/CommentStore.py">
+    <entry file="file://$PROJECT_DIR$/source/GetCatagory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/Capacity.py">
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/sklearn/naive_bayes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="206" column="21" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="781" column="8" selection-start-line="781" selection-start-column="8" selection-end-line="781" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test_nltk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="288" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Mandarin.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48582995">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1019,14 +765,191 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/punctuation">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.854251">
+          <caret line="158" column="1" selection-start-line="158" selection-start-column="1" selection-end-line="158" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/stopword">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41525424">
+          <caret line="1540" column="2" selection-start-line="1540" selection-start-column="2" selection-end-line="1540" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-1247971765/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="508" column="4" selection-start-line="508" selection-start-column="4" selection-end-line="508" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/figures/手机京东.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/figures/聚美优品.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/TagcloundUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5912409">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/TF_IDF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.0218978">
+          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/GetDetailDescripe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6240876">
+          <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/plainbox/impl/exporter/json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/GetComment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/CommentStore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/read">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="83" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22167487">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Capacity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.044334974">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/GetCataApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="142" column="24" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/pymongo/collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33169532">
+          <caret line="733" column="0" selection-start-line="733" selection-start-column="0" selection-end-line="733" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/apps_comments/图像/HP照片打印">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3126551">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/apps_detail_descripe/运动健康/Washington Capitals.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="496" selection-start-line="0" selection-start-column="496" selection-end-line="0" selection-end-column="496" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/AppInfo.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.104477614">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="32" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/CapacityStore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.686567">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/WilsonScoreUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35820895">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.4/dist-packages/pymongo/cursor.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="734" column="50" selection-start-line="734" selection-start-column="50" selection-end-line="734" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Nltk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="401" column="26" selection-start-line="401" selection-start-column="26" selection-end-line="401" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -1036,54 +959,26 @@
     <entry file="file://$PROJECT_DIR$/source/AppStore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="10" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/GetCataApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="142" column="24" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/GetCatagory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="29" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/GetComment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="98" selection-end-column="49" />
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/GetDetailDescripe.py">
+    <entry file="file://$PROJECT_DIR$/source/MongoUtil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+          <caret line="222" column="26" selection-start-line="222" selection-start-column="26" selection-end-line="222" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/test_nltk.py">
+    <entry file="file://$PROJECT_DIR$/source/Init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.414634">
-          <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="287" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="0.622">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+          <folding>
+            <element signature="e#156#170#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

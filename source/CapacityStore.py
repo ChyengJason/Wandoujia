@@ -11,7 +11,8 @@ from source._const import const
 capacity_table {
     "appid":appid,
     "date":2017-01-06
-    "capacity":100000
+    "capacity":1万人安装
+    "capacity_num":10000
 }
 ('2016-11-24', 14681)
 ('2016-12-08', 15348)
