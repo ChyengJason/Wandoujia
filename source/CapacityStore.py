@@ -102,8 +102,9 @@ def getCapacityCount(date):
     return MongoUtil.find("capacity_table", {"date":date}).count()
 
 # getCataAppsInfo("../file/apps_2017_1_15")
-saveCapacity()
-print("未存入的总数"+str(len(app_not_exist)))
+if __name__ == '__main__':
+    saveCapacity()
+    print("未存入的总数"+str(len(app_not_exist)))
 # date = time.strptime("2016-12-29", "%Y-%m-%d")
 # print(date)
 # print(getCapacityCount(date))

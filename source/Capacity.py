@@ -83,11 +83,11 @@ def getChainIncreRateCapacity(appname,cataname=""):
     rates = {}
     app_capacity = getDowloadCapacity(appname,cataname=cataname)
     if app_capacity==None:
-        return
+        return None,None,None
     begin_date,end_date = getMinAndMaxDate(app_capacity.keys())
 
     if  len(app_capacity)<=1:
-        return
+        return None,None,None
 
     date_list = sorted(app_capacity.keys())
     last = 0
@@ -97,7 +97,7 @@ def getChainIncreRateCapacity(appname,cataname=""):
         cha = app_capacity[date_list[i]] - app_capacity[date_list[last]]
         last = i
         rates[date_list[i]] = float(cha) / (app_capacity[date_list[last]])
-    print(rates)
+    # print(rates)
     return begin_date,end_date,rates
 
 def getD_ValueChainIncreRate(appname,cataname=""):
@@ -109,7 +109,8 @@ def getD_ValueChainIncreRate(appname,cataname=""):
     return begin_date,end_date,d_incre
 
 def getMaxDownLoadCapacity(limit = 10):
-    pass
+    results = MongoUtil.capacity_find_most(limit)
+    return results
 
 def showD_valueAppDownLoadCapacity(apps):
     lines = []
@@ -198,10 +199,11 @@ def showD_valueAppChainIncreRate(apps):
 
     graph.showLines(show_value=True,values=values)
 
+if __name__ == '__main__':
+
 # showAppDownLoadCapacity([("支付宝",""),("淘宝","购物"),("天猫","")])
 # showAppChainIncreRate([("支付宝",""),("淘宝","购物"),("天猫","")])
 # begin_date,end_date,d_incre = getD_ValueChainIncreRate("小红书")
 
 # showAppDownLoadCapacity([("知乎","")])
-
-showAppChainIncreRate([("知乎",""),("简书","")])
+    showAppChainIncreRate([("知乎",""),("简书","")])

@@ -269,9 +269,8 @@ def predict(clf,comment_words,best_words):
     pred = clf.prob_classify(best_word_features(comment_words,best_words))
     return pred
 
-def test_result():
+def test_result(comment):
     model,best_words = load_model()
-    comment = "神来之笔"
     comment_words = delivery_word(comment)
     pred = predict(model,comment_words,best_words)
     print("积极："+str(pred.prob('pos')) + "  消极：" + str(pred.prob('neg')) + '\n')
@@ -397,9 +396,11 @@ def saveAllComentEmotionData():
             print(code,end=" ")
             saveCommentEmotionData(model,best_words,app)
 
+if __name__ == '__main__':
+
 # test_and_store_model()
 
-saveAllComentEmotionData()
+    saveAllComentEmotionData()
 
 # app = MongoUtil.find_one("app_table",{"appname":"小红书"})
 # model,best_words = load_model()

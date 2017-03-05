@@ -8,9 +8,13 @@ class Searcher:
     def __init__(self,appinfo):
         self.__init__(appinfo.cata,appinfo.name)
 
-    def __init__(self,cataname,appname):
+    def __init__(self,appname,cataname=""):
         self.tf_idfdict = None
-        self.app = MongoUtil.find_one("app_table", {"catagory":cataname, "appname":appname})
+        if cataname == "":
+            self.app = MongoUtil.find_one("app_table", {"appname":appname})
+        else:
+            self.app = MongoUtil.find_one("app_table", {"catagory":cataname, "appname":appname})
+
         if self.app is None:
             print("该app未存储在数据库，可能原因：查询不准确，未存储入数据库，数据未更新")
         print(self.app)
@@ -93,6 +97,6 @@ class Searcher:
         TagcloundUtil.generateTagClound(self.app["appname"], wordlist)
 
 if __name__ == '__main__':
-    searcher = Searcher("效率办公","WPS便签")
+    searcher = Searcher("QQ")
     if searcher.tf_idfdict is not None:
         searcher.newTagClound(searcher.tf_idfdict)

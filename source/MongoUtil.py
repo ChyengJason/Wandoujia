@@ -49,12 +49,15 @@ def upsert_mary(table, datas):
         check_connected(my_conn)
         bulk = my_conn.db[table].initialize_ordered_bulk_op()
         for data in datas:
-            _id=data['_id']
-            tem = {}
-            for d in data.items():
-                if d[0] != "_id" :
-                    tem[d[0]] = d[1]
-            bulk.find({'_id': _id}).upsert().update({'$set': tem})
+            if '_id' in data.keys():
+                id=data["_id"]
+                tem = {}
+                for d in data.items():
+                    if d[0] != "_id" :
+                        tem[d[0]] = d[1]
+                bulk.find({'_id': id}).upsert().update({'$set': tem})
+            else:
+                bulk.insert(data)
         bulk.execute()
         my_conn.disconnect()
     except Exception:
@@ -219,7 +222,7 @@ def capacity_find_most(limit = 10):
             }
         ''')
 
-        ct = my_conn.db[table].map_reduce(mapper,reduce,"result")
+        ct = my_conn.db[table].map_reduce(mapper,reduce,"capacity_fast_app")
         result = ct.find().sort("value.capacity_num",pymongo.DESCENDING).limit(limit)
         my_conn.disconnect()
         return result
