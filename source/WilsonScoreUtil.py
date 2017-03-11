@@ -27,3 +27,7 @@ def confidence_2(ups,count):
     bottomlimit =((phat + z*z/(2*n) - z * sqrt((phat*(1-phat)+z*z/(4*n))/n))/(1+z*z/n))
 
     return bottomlimit
+
+if __name__ == '__main__':
+    print(confidence_2(1.0,2))
+    print(confidence_2(0.5,2000))

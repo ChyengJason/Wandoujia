@@ -96,7 +96,10 @@ def getChainIncreRateCapacity(appname,cataname=""):
         # print(date_list[last])
         cha = app_capacity[date_list[i]] - app_capacity[date_list[last]]
         last = i
-        rates[date_list[i]] = float(cha) / (app_capacity[date_list[last]])
+        if (app_capacity[date_list[last]]) != 0:
+            rates[date_list[i]] = float(cha) / (app_capacity[date_list[last]])
+        else:
+            rates[date_list[i]] = float(cha)
     # print(rates)
     return begin_date,end_date,rates
 

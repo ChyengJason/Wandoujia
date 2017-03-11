@@ -191,6 +191,25 @@ def sort(table,condition,order,limit=0):
     except Exception:
         print(traceback.format_exc())
 
+def sort_with_values(table,values,condition,order,limit=0):
+    # order 1：正序 -1：逆序
+    try:
+        my_conn = MongoConn()
+        check_connected(my_conn)
+        if order != 1:
+            order = pymongo.DESCENDING
+        else:
+            order = pymongo.ASCENDING
+
+        if limit <= 0:
+            ct = my_conn.db[table].find(values).sort(condition,order)
+        else:
+            ct = my_conn.db[table].find(values).sort(condition,order).limit(limit)
+        my_conn.disconnect()
+        return ct
+    except Exception:
+        print(traceback.format_exc())
+
 def capacity_find_most(limit = 10):
     try:
         table = "capacity_table"

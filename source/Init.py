@@ -63,7 +63,7 @@ def scanAppInfo(appname,catagory=""):
             print(f.read())
         print()
 
-def scanChainAppRates(apps):
+def scanChainAppRates(apps = [("知乎",""),("简书","")]):
     # apps = [("知乎",""),("简书","")]
     Capacity.showAppChainIncreRate(apps)
 
@@ -87,16 +87,29 @@ def scanMostCapacityApps(limit=50):
         print(appinfo)
         print()
 
-def scanMostFastGrownApps():
+def scanMostFastGrownApps(order=-1,limit=50,capacity_limit = 10000,date = "2017-01-23"):
 
-    pass
+    results = MongoUtil.sort_with_values("capacity_rate_table",{"date":date},"incre_rate",order = order)
+
+    for result in results:
+        limit -=1
+        appid = result["appid"]
+        appinfo = MongoUtil.find_one("app_table",{"_id":appid})
+        capacityinfo = MongoUtil.find_one("capacity_table",{"appid":appid,"date":date})
+        if capacityinfo is None or capacityinfo["capacity_num"] < 10000:
+            continue
+        appinfo["incre_rate"] = result["incre_rate"]
+        appinfo["wilson_lower_rate"] = result["wilson_lower_rate"]
+        print(appinfo)
+        print()
+        if limit <=0 :
+            break
 
 def scanMostPositiveApps(order=-1,limit=50):
     results = MongoUtil.sort("emotion_comment","wilson_lower_score",order = order,limit = limit)
     for result in results:
         appid = result["appid"]
         appinfo = MongoUtil.find_one("app_table",{"_id":appid})
-
         appinfo["comment_count"] = result["comment_count"]
         appinfo["pos_count"] = result["pos_count"]
         appinfo["neg_count"] = result["neg_count"]
@@ -107,6 +120,7 @@ def scanMostPositiveApps(order=-1,limit=50):
         print()
 
 def scanCommendatoryApps():
+
     pass
 
 def judgeCommentEmotion(comment):
@@ -117,8 +131,10 @@ if __name__ == '__main__':
     # scanCatagoryInfo("音乐")
     # scanCatagorys()
     # scanAppInfo("QQ")
-    apps = [("知乎",""),("简书","")]
+    # apps = [("知乎",""),("简书","")]
     # scanChainAppRates(apps)
+    scanMostFastGrownApps()
     # scanAppCapacity(apps)
     # scanAppCommentWords("知乎")
     # judgeCommentEmotion("很喜欢")
+    # scanDateInfo()
