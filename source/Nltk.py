@@ -380,20 +380,15 @@ def saveAllComentEmotionData():
     model,best_words = load_model()
     catas = json.load(open(const.WANDOUJIA_CATA_JSON_FILE))
     for cataname in catas:
-    # cataname = "运动健康"
-    # "视频" "生活服务" "美化手机" "旅游出行" "聊天社交" "丽人母婴" "金融理财" "系统工具"
-    # “新闻阅读” "教育培训" "交通导航" "购物" "电话通讯" "图像" "生活实用工具" "音乐"
 
-    # print(cataname)
         apps = MongoUtil.find("app_table",{"catagory":cataname})
         code = 0
         for app in apps:
             code+=1
-        # if app["appname"] == "ibody运动":
-        #     begin = True
-
-        # if begin:
             print(code,end=" ")
+            if MongoUtil.isExist("emotion_comment",{"appid":appid}):
+                print(appname+"已经存在了")
+                break
             saveCommentEmotionData(model,best_words,app)
 
 if __name__ == '__main__':

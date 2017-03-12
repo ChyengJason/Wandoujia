@@ -44,6 +44,8 @@ def upsert_mary(table, datas):
     #批量更新插入，根据‘_id’更新或插入多条记录。
     #把'_id'值不存在的记录，插入数据库。'_id'值存在，则更新记录。
     #如果更新的字段在mongo中不存在，则直接新增一个字段
+    if len(datas) <=0:
+        return
     try:
         my_conn = MongoConn()
         check_connected(my_conn)
@@ -84,7 +86,7 @@ def find_one(table, value):
         my_conn = MongoConn()
         check_connected(my_conn)
         result = my_conn.db[table].find_one(value)
-        my_conn.disconnect()
+        # my_conn.disconnect()
         return result
     except Exception:
         print(traceback.format_exc())

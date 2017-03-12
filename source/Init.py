@@ -13,6 +13,7 @@ import json
 import os
 from source import Capacity
 from source import CapacityStore
+from source import Commendatory
 from source import MongoUtil
 from source import Nltk
 from source.TF_IDF import Searcher
@@ -88,15 +89,14 @@ def scanMostCapacityApps(limit=50):
         print()
 
 def scanMostFastGrownApps(order=-1,limit=50,capacity_limit = 10000,date = "2017-01-23"):
-
+    capacity_low_limit = 10000
     results = MongoUtil.sort_with_values("capacity_rate_table",{"date":date},"incre_rate",order = order)
-
     for result in results:
         limit -=1
         appid = result["appid"]
         appinfo = MongoUtil.find_one("app_table",{"_id":appid})
         capacityinfo = MongoUtil.find_one("capacity_table",{"appid":appid,"date":date})
-        if capacityinfo is None or capacityinfo["capacity_num"] < 10000:
+        if capacityinfo is None or capacityinfo["capacity_num"] < capacity_low_limit:
             continue
         appinfo["incre_rate"] = result["incre_rate"]
         appinfo["wilson_lower_rate"] = result["wilson_lower_rate"]
@@ -119,21 +119,22 @@ def scanMostPositiveApps(order=-1,limit=50):
         print(appinfo)
         print()
 
-def scanCommendatoryApps():
-
-    pass
+def scanCommendatoryApps(date="2016-12-08",limit=10):
+    apps = Commendatory.getRecommendApps(limit=limit,date=date)
+    for app in apps:
+        print(app)
 
 def judgeCommentEmotion(comment):
     Nltk.test_result(comment=comment)
 
 if __name__ == '__main__':
-    # scanMostCapacityApps()
+    scanMostCapacityApps()
     # scanCatagoryInfo("音乐")
     # scanCatagorys()
     # scanAppInfo("QQ")
     # apps = [("知乎",""),("简书","")]
     # scanChainAppRates(apps)
-    scanMostFastGrownApps()
+    # scanMostFastGrownApps()
     # scanAppCapacity(apps)
     # scanAppCommentWords("知乎")
     # judgeCommentEmotion("很喜欢")

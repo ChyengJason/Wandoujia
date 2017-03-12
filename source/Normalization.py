@@ -14,7 +14,3 @@ def sigmoid(X,useStatus):
         return 1.0 / (1 + np.exp(-float(X)))
     else:
         return float(X)
-
-for i in range(-10,10,1):
-    print(i,end=" ")
-    print(sigmoid(i,True))
